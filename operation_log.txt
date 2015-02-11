@@ -56,3 +56,65 @@ clients terminated :2
 dumps serviced :0
 dumps reported :0
 [9784:11212:0211/121101:VERBOSE1:crash_service_main.cc(88)] Session end. return code is 0
+[7668:11172:0211/121738:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[7668:11172:0211/121738:VERBOSE1:crash_service.cc(133)] window handle is 002B08B6
+[7668:11172:0211/121738:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[7668:11172:0211/121738:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[7668:11172:0211/121738:VERBOSE1:crash_service_main.cc(83)] Ready to process crash requests
+[7668:10136:0211/121738:VERBOSE1:crash_service.cc(313)] client start. pid = 10072
+[7668:10136:0211/121739:VERBOSE1:crash_service.cc(313)] client start. pid = 2428
+[11112:10528:0211/121739:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[11112:10528:0211/121739:VERBOSE1:crash_service.cc(133)] window handle is 00501066
+[11112:10528:0211/121739:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[11112:10528:0211/121739:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[11112:10528:0211/121739:ERROR:crash_service.cc(290)] could not start dumper
+[7668:10136:0211/121815:VERBOSE1:crash_service.cc(313)] client start. pid = 6596
+[7668:4564:0211/121815:VERBOSE1:crash_service.cc(321)] client end. pid = 6596
+[7668:10136:0211/121836:VERBOSE1:crash_service.cc(313)] client start. pid = 8344
+[7668:4564:0211/121836:VERBOSE1:crash_service.cc(321)] client end. pid = 8344
+[7668:8932:0211/122204:VERBOSE1:crash_service.cc(321)] client end. pid = 2428
+[7668:8932:0211/122204:VERBOSE1:crash_service.cc(321)] client end. pid = 10072
+[7668:8932:0211/122205:VERBOSE1:crash_service.cc(342)] zero clients. exiting
+[7668:11172:0211/122205:VERBOSE1:crash_service.cc(480)] session ending..
+[7668:11172:0211/122205:VERBOSE1:crash_service.cc(485)] clients connected :4
+clients terminated :4
+dumps serviced :0
+dumps reported :0
+[7668:11172:0211/122205:VERBOSE1:crash_service_main.cc(88)] Session end. return code is 0
+[7600:8792:0211/122353:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[7600:8792:0211/122353:VERBOSE1:crash_service.cc(133)] window handle is 004C1068
+[7600:8792:0211/122353:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[7600:8792:0211/122353:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[7600:8792:0211/122353:VERBOSE1:crash_service_main.cc(83)] Ready to process crash requests
+[7600:11092:0211/122353:VERBOSE1:crash_service.cc(313)] client start. pid = 1444
+[7600:11092:0211/122353:VERBOSE1:crash_service.cc(313)] client start. pid = 7208
+[11200:3284:0211/122354:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
+[11200:3284:0211/122354:VERBOSE1:crash_service.cc(133)] window handle is 005B1324
+[11200:3284:0211/122354:VERBOSE1:crash_service.cc(279)] pipe name is \\.\pipe\Atom Crash Service
+dumps at 
+[11200:3284:0211/122354:VERBOSE1:crash_service.cc(283)] checkpoint is crash_checkpoint.txt
+server is http://54.249.141.255:1127/post
+maximum 128 reports/day
+reporter is atom-shell-crash-service
+[11200:3284:0211/122354:ERROR:crash_service.cc(290)] could not start dumper
+[7600:2932:0211/122418:VERBOSE1:crash_service.cc(321)] client end. pid = 7208
+[7600:2932:0211/122418:VERBOSE1:crash_service.cc(321)] client end. pid = 1444
+[7600:2932:0211/122419:VERBOSE1:crash_service.cc(342)] zero clients. exiting
+[7600:8792:0211/122419:VERBOSE1:crash_service.cc(480)] session ending..
+[7600:8792:0211/122419:VERBOSE1:crash_service.cc(485)] clients connected :2
+clients terminated :2
+dumps serviced :0
+dumps reported :0
+[7600:8792:0211/122419:VERBOSE1:crash_service_main.cc(88)] Session end. return code is 0
