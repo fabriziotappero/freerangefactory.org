@@ -1,0 +1,11 @@
+
+sudo gem install bourbon neat bitter refills
+
+cd _sass
+bourbon install
+neat install 
+bitter install
+
+http://refills.bourbon.io
+
+

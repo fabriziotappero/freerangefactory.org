@@ -1,13 +1,17 @@
 # Site settings
 title: Free Range Factory
 email: contact@freerangefactory.org
-description: 'The best place to improve your embedded design skills.'
-rel-author: 'https://freerangefactory.org'
-rel-publisher: 'https://freerangefactory.org'
-
+description: "The best place to improve your embedded design skills."
+rel-author: "https://freerangefactory.org"
+rel-publisher: "https://freerangefactory.org"
 
 baseurl: ""
-url: 'http://freerangefactory.org'
+url: "http://freerangefactory.org"
 
 # Build settings
 markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: :compressed
