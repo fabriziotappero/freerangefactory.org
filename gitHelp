@@ -1,12 +1,15 @@
-## some help to use git ##
+Some help to use git
+
 ### STEP 1 ###
 git clone https://github.com/fabriziotappero/freerangefactory.org.git
 cd freerangefactory.org
+
 ### STEP 2 ###
 do your modifications
 git status or git status -a or use gitk
 git add .
 git commit -m 'added some good stuff'
+
 ### STEP 3 ###
 git push origin gh-pages
 your website is now available on:

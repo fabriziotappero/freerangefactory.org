@@ -1,0 +1,10 @@
+# Site settings
+title: Free Range Factory
+email: contact@freerangefactory.org
+description: > # this means to ignore newlines until "baseurl:"
+  The best place to improve your embedded design skills.
+baseurl: ""
+url: "http://freerangefactory.org"
+
+# Build settings
+markdown: kramdown
