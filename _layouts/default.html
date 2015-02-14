@@ -2,9 +2,13 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <div class="global_page_wrap">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
   </body>
   <script src="js/jquery.min.js"></script>
+  <script src="js/generic.js"></script>
+  <!-- REMEMBER TO ADD ANALYTICS! -->
 </html>
