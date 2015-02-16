@@ -6,17 +6,25 @@
 @import "neat/neat"
 @import "base/base"
 
+$large-screen: em(860) !default
+
 // navigation bar stylesheet
 @import "navbar"
 
-// homepage main presentation section
+// homepage main presentation section with minor changes
 @import "home_banner"
 
 .device-background
-  margin: 100px 0px
+  margin: 60px 0px
+  +media($large-screen)
+    margin: 120px 0px
 
-// homepage cards seciton
+// homepage cards section with minor changes
 @import "home_cards"
 
 .cards
-  margin: 50px 0px
+  margin: 30px 0px
+
+.card
+  +media($large-screen)
+    +flex-basis(25em)
