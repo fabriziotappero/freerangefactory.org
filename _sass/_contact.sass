@@ -1,0 +1,58 @@
+form
+  max-width: 750px
+  margin: 0 auto 100px
+  padding: 40px 20px
+
+  label
+    color: #666
+    font-weight: normal
+
+  input, textarea
+    //border: 2px solid #40526B
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    font-size: 16px
+
+    &:focus
+      outline: none
+      //border-color: #40526B
+
+  textarea
+    height: 10em
+
+  .submit-wrap
+    text-align: right
+
+  [type="submit"]
+    background: #687D99
+    color: white
+    font-size: 18px
+    text-transform: uppercase
+    width: 33%
+
+    &:hover
+      background: #40526B
+
+  .contact-info-group
+
+    label
+      width: 50%
+      float: left
+      +box-sizing(border-box)
+
+      &:nth-child(1)
+        padding-right: 10px
+
+      &:nth-child(2)
+        padding-left: 10px
+
+  label
+    display: block
+    margin-bottom: 20px
+
+    span
+      display: block

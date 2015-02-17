@@ -11,3 +11,12 @@ $(document).ready(function() {
     });
   });
 });
+
+
+$(function () {
+  /*
+  IP Cores search field
+  */
+  $('input#id_search').quicksearch('table tbody tr',{'delay': 300,
+    'stripeRows': ['odd', 'even']});
+});
