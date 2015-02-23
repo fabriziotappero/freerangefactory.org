@@ -1,7 +1,16 @@
+@mixin omega-reset($nth)
+  &:nth-child(#{$nth})
+    margin-right: flex-gutter()
+  &:nth-child(#{$nth}+1)
+    clear: none
+
+
 .cards
-  +display(flex)
-  +flex-wrap(wrap)
-  +justify-content(space-between)
+  //+display(flex)
+  //+flex-wrap(wrap)
+  //+justify-content(space-between)
+  @include outer-container
+  //@include span-columns(12)
 
 .card
   ///////////////////////////////////////////////////////////////////////////////////
@@ -14,6 +23,7 @@
   $dark-gray: #333333 !default
   $base-font-color: $dark-gray !default
   $large-screen: em(860) !default
+  $medium-screen: em(640) !default
   //////////////////////////////////////////////////////////////////////////////////
   $card-border-color: $base-border-color
   $card-border: 1px solid $card-border-color
@@ -23,15 +33,26 @@
   $card-image-background: #dbd199
   $card-image-hover-background: lighten($card-image-background, 5%)
   $card-margin: 0.4em
-  +flex-basis(16em)
-  +flex-grow(1)
+
+
+  //@include media($medium-screen)
+  //  @include span-columns(6)
+  //  @include omega(2n)
+
+  @include media($medium-screen)
+    @include span-columns(4)
+    @include omega(3n)
+
+
+  //+flex-basis(16em)
+  //+flex-grow(1)
   +transition(all 0.2s ease-in-out)
   background-color: $card-background
   border-radius: $base-border-radius
   border: $card-border
   box-shadow: 0 2px 4px darken($base-background-color, 10%)
   cursor: pointer
-  margin: 0 $card-margin $base-spacing $card-margin
+  //margin: 0 $card-margin $base-spacing $card-margin
   position: relative
   position: relative
   .card-image
