@@ -1,6 +1,16 @@
 ---
-layout: default
+layout: test
 ---
+<div class="container">
+  <nav class="nav">
+    <img src="img/navbar_logo.png" alt="Logo image">
+    <div class="links">
+      <a href="#about-me">Shop</a>
+      <a href="#work">Articles</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <section class="landingPage">
     <div class="landingPage-inner">
       <h2>You build your own embedded system, we build the tools</h2>
@@ -11,16 +21,16 @@ layout: default
     </div>
   </section>
 
-<h3>Where to start</h3>
+  <h3>Where to start</h3>
   <section class="cards">
+
     <div class="card">
       <div class="card-inner">
       <div class="card-image"><img src="img/card_code.png" alt=""></div>
       <div class="card-header">Books and Tutorials</div>
       <div class="card-copy">
         <p>A collection of books to quickly learn C++ and VHDL and get started
-           developing the code for your embedded system. We have spent countless
-           hours preparing this material.</p>
+           developing the code for your embedded system.</p>
       </div>
     </div>
   </div>
@@ -54,12 +64,18 @@ layout: default
       <div class="card-image"><img src="img/card_pcb.png" alt=""></div>
       <div class="card-header">Printed Circuit Board</div>
       <div class="card-copy">
-        <p>Everything you need to know about printed cuircuit board design.
-          You can learn how to design an electronic schematic and succesfully
-          layout the board.</p>
+        <p>Everything you need to know about printed cuircuit board(PCB) design.
+          You can learn how to design an electronic schematic and succesfully layout
+          the board.</p>
       </div>
     </div>
   </div>
+  
   </section>
 
   {% include contact.html %}
+
+  <footer class="footer">
+    Copyright &#169; {{ site.time | date: '%Y' }} freeangefactory.
+  </footer>
+</div>

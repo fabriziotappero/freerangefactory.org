@@ -1,46 +1,131 @@
 ---
 ---
+//$visual-grid: true
+//$visual-grid-index: front
+//$visual-grid-opacity: 0.3
 
 // basic tools
 @import "bourbon/bourbon"
 @import "neat/neat"
 @import "base/base"
 
-$large-screen: em(860) !default
+$base-spacing: 1.5em !default
+$base-color: #2989d8
+$desktop: new-breakpoint(min-width 720px)
 
-// navigation bar stylesheet
-@import "navbar"
+body
+  margin: 0
+  font-size: 1.2em
+  min-width: 430px
 
-// homepage main presentation section with minor changes
-@import "home_banner"
+h1,h2,h3,h4,h5
+  text-align: center
+  text-transform: uppercase
+  color: $base-color
+  margin: 3em auto 1em auto
 
-.device-background
-  margin: 50px 0 0 0
-  +media($large-screen)
-    margin: 120px 0 0 0
+.nav
+  img
+    //max-height: 2em
+    //opacity: .8
+    margin: 1em
 
-// homepage cards section with minor changes
-@import "home_cards"
+  .links
+    float: right
+    display: inline
+    text-transform: uppercase
+    margin: 1em
+    a
+      margin-left: 20px
+      font-weight: bold
+      color: $base-color
 
-//.cards
-  //margin: 30px 0px
+    a:hover
+      color: rgba( $base-color, .7 )
 
-//.card
-  //+media($large-screen)
-    //+flex-basis(25em)
+.landingPage
+  @include linear-gradient(#1e5799, #2989d8)
+  height: 550px
+  margin: 0
+  color: white
+
+  .landingPage-inner
+    text-align: left
+    max-width: 800px
+    @include media($desktop)
+      margin-left: 60px
+    padding: 2.5em
+
+    h1,h2,h3,h4,h5
+      color: white
+      margin: 0
+      text-align: left
+
+
+    p
+      font-size: 1.1em
+
+.cards
+  @include outer-container
+  padding: 0
+
+  .card-inner
+    margin: 0.3em
+    //border: 1px solid black
+    height: 390px
+    background-color: lighten(gainsboro, 10%)
+    border-radius: 3px
+    border: 1px solid gainsboro
+    box-shadow: 0 2px 4px darken(white, 10%)
+    @include media($desktop)
+      height: 430px
+
+  .card
+    cursor: pointer
+    position: relative
+    margin: 0
+
+    // mobile first
+    @include span-columns(12)
+    @include omega
+    // desktop setup
+    @include media($desktop)
+      @include span-columns(6, table)
+      @include omega
+
+    .card-image
+      overflow: hidden
+      max-height: 190px
+
+      img
+        width: 100%
+        opacity: 0.6
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+
+    .card-header
+      font-weight: bold
+      line-height: 1.5em
+      padding: $base-spacing / 3 $base-spacing / 2
+
+    .card-copy
+      font-size: 0.9em
+      line-height: 1.5em
+      padding: $base-spacing / 2 $base-spacing / 2
+
+    &:focus,
+    &:hover
+      .card-image img
+        opacity: 0.9
 
 // contact form style
 @import "contact"
 
-// footer style
-@import "footer"
+// foter style
+.footer
+  font-size: 0.9em
+  margin: 1em 0 0 1em
+  color: #666
 
 // ip cores
 @import "ip_cores"
-
-
-h3
-  text-transform: uppercase
-  color: #40526B
-  text-align: center
-  padding: 70px 0px 30px

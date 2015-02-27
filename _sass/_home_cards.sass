@@ -13,6 +13,12 @@
   //@include span-columns(12)
 
 .card
+  @include span-columns(4)
+  &:last-of-type
+    @include omega
+    background-color: pink
+
+.card
   ///////////////////////////////////////////////////////////////////////////////////
   $base-border-color: gainsboro !default
   $base-border-radius: 3px !default
@@ -34,14 +40,16 @@
   $card-image-hover-background: lighten($card-image-background, 5%)
   $card-margin: 0em
 
+  //@include span-columns(4)
+
 
   //@include media($medium-screen)
   //  @include span-columns(6)
   //  @include omega(2n)
 
-  @include media($medium-screen)
-    @include span-columns(4)
-    @include omega(3n)
+  //@include media($medium-screen)
+    //@include span-columns(4)
+    //@include omega(3n)
 
 
   //+flex-basis(16em)
