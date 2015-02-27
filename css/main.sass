@@ -13,9 +13,8 @@
 $landingPageImg: '{{ site.url }}/img/logo_criket.png'
 $base-spacing: 1.5em !default
 $base-color: #2989d8
-$desktop: new-breakpoint(min-width 720px)
-$large_desktop: new-breakpoint(min-width 980px)
-$phone: new-breakpoint(max-width 450px)
+$desktop: new-breakpoint(min-width 855px)
+
 
 body
   margin: 0
@@ -56,7 +55,7 @@ h1,h2,h3,h4,h5
 
   .landingPageImage
     display: none
-    @include media($large_desktop)
+    @include media($desktop)
       background-image: url($landingPageImg)
       background-size: cover
       margin: 4em 1em auto auto
@@ -67,13 +66,12 @@ h1,h2,h3,h4,h5
       position: relative
       z-index: 1
 
-
   .landingPage-inner
     text-align: left
     max-width: 800px
+    padding: 3.5em 1em
     @include media($desktop)
       margin-left: 60px
-    padding: 2.5em
 
     h1,h2,h3,h4,h5
       color: white
