@@ -6,7 +6,9 @@ rel-author: "https://freerangefactory.org"
 rel-publisher: "https://freerangefactory.org"
 
 baseurl: ""
-url: "http://freerangefactory.org"
+#url: "http://freerangefactory.org"
+url: "http://fabriziotappero.github.io/freerangefactory.org"
+
 
 # Build settings
 markdown: kramdown
