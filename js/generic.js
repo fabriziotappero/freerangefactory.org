@@ -1,22 +1,40 @@
 $(document).ready(function() {
-  var menuToggle = $('#js-centered-navigation-mobile-menu').unbind();
-  $('#js-centered-navigation-menu').removeClass("show");
 
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-centered-navigation-menu').slideToggle(function(){
-      if($('#js-centered-navigation-menu').is(':hidden')) {
-        $('#js-centered-navigation-menu').removeAttr('style');
-      }
-    });
+  /* resize fonts for small/mobile screen */
+  $('body').flowtype({
+   minimum   : 500,
+   maximum   : 600,
+   minFont   : 12,
+   maxFont   : 30,
+   fontRatio : 30
   });
+
 });
 
 
 $(function () {
-  /*
-  IP Cores search field
-  */
+  /* IP Cores search field */
   $('input#id_search').quicksearch('table tbody tr',{'delay': 300,
     'stripeRows': ['odd', 'even']});
 });
+
+
+$(function() {
+  smoothScroll(700);
+});
+
+// smoothScroll function is applied from the document ready function
+function smoothScroll (duration) {
+  $('a[href^="#"]').on('click', function(event) {
+
+      var target = $( $(this).attr('href') );
+
+      if( target.length ) {
+          event.preventDefault();
+          // scroll to section
+          $('html, body').animate({
+              scrollTop: target.offset().top
+          }, duration);
+      }
+  });
+}

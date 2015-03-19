@@ -8,7 +8,7 @@ rel-publisher: "https://freerangefactory.org"
 baseurl: ""
 #url: "http://freerangefactory.org"
 url: "http://fabriziotappero.github.io/freerangefactory.org"
-
+url: "http://localhost:4000/"
 
 # Build settings
 markdown: kramdown
@@ -17,3 +17,25 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: :compressed
+
+
+# Shop items
+shop-items:
+- {title: Xula2 FPGA Board,
+  description: 'The XuLA 2 board is a completely open-source FPGA-based
+  experimental board that packs a Xilinx XC6SLX25 Spartan 6 FPGA, 256 Mbit
+  SDRAM, 8 Mbit flash, two voltage regulators, a supervisory Microchip
+  microcontroller 18F14K50 PIC and a MicroSD card slot (card not included)
+  into a 51 mm x 25 mm footprint.
+
+  On the Github repository you can find the XuLA 2 board reference manual. All
+  material you can possibly want comes with source code, even with the OpenOffice
+  source files.',
+  specs: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+   esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+  laborum.',
+  img: 'img/xula2.png'}
