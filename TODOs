@@ -9,3 +9,7 @@ Redesign the structure of the shop. As it is not I cannot use markups for
 Contact link is now working but not scrolling smoothly..
 
 The overall website look needs to be reviewed. Colors, fonts, titles, spacing.
+
+The landing page patent image depends on some dir path. Make in relative
+
+All home links are broken because done with "/". make them relative.
