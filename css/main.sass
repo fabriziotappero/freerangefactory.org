@@ -10,7 +10,7 @@
 @import "base/base"
 
 // TODO: fix image path
-$landingPageImg: '{{ site.url }}/img/logo_patent1.png'
+$landingPageImg: '{{ site.url }}/img/icons/logo_patent_camera.png'
 $base-spacing: 1.5em !default
 $base-color: #2989d8
 $base-color2:#1E589A
@@ -19,7 +19,6 @@ $desktop: new-breakpoint(min-width 855px)
 
 body
   margin: 0
-  font-size: 1.2em
   min-width: 320px
 
 h1,h2,h3,h4,h5
@@ -28,14 +27,18 @@ h1,h2,h3,h4,h5
   color: $base-color
   margin: 3em auto 1em auto
 
-.nav
 
-  img
-    margin: 0.4em 0 0 0.2em
-    width: 50px
-    @include media($desktop)
-      width: 90px
-      margin: 1em
+[class^="icon-"]
+  svg
+    +size(28px)
+    margin: auto auto -6px auto
+    path
+      fill: $base-color
+
+.nav
+  .logo-nav
+    svg
+      +size(200px auto)
 
   .links
     float: right
@@ -167,10 +170,10 @@ h1,h2,h3,h4,h5
   @include outer-container
   font-size: 1.125rem
   line-height: 1.6
-  padding: 1em
+  padding: 0 1em
 
-  h3
-    margin: 1em
+  h1, h2, h3, h4, h5
+    margin: 0 0 1em 0
 
   .ShopIntro
     @include span-columns(12)
@@ -179,14 +182,90 @@ h1,h2,h3,h4,h5
 
   .ShopItem
     @include span-columns(12)
-    background-color: lighten($base-color, 40%)
-    padding: 1em
+    background-color: lighten($base-color, 70%)
+    //padding: 1em
 
     .ShopItem-info
       @include span-columns(8)
-      h3
-        margin: 0
-        text-align: left
 
     .ShopItem-img
       @include span-columns(4)
+      max-width: 250px
+
+
+    .accordion-tabs
+      ////////////////////////////////////////////////////
+      $base-border-color: gainsboro !default
+      $base-border-radius: 3px !default
+      $base-background-color: white !default
+      $base-spacing: 1.5em !default
+      $base-accent-color: #477dca !default
+      $base-link-color: $base-accent-color !default
+      $dark-gray: #333333 !default
+      $light-gray: #dddddd !default
+      $medium-screen: em(640) !default
+      ////////////////////////////////////////////////////
+      $tab-border: 1px solid $base-border-color
+      $tab-content-background: lighten($light-gray, 10)
+      $tab-active-background: $tab-content-background
+      $tab-inactive-color: $base-background-color
+      $tab-inactive-hover-color: darken($light-gray, 5)
+      $tab-mode: $medium-screen
+      +clearfix
+      line-height: 1.5
+      margin-bottom: $base-spacing
+      padding: 0
+      +media(max-width $tab-mode)
+        border-radius: $base-border-radius
+        border: $tab-border
+
+      .tab-header-and-content
+        list-style: none
+        +media($tab-mode)
+          display: inline
+
+        &:first-child .tab-link
+          border-top-left-radius: $base-border-radius
+          border-top-right-radius: $base-border-radius
+          +media(max-width $tab-mode)
+            border-top: 0
+        &:last-child .tab-link
+          +media(max-width $tab-mode)
+            border-bottom-left-radius: $base-border-radius
+            border-bottom-right-radius: $base-border-radius
+      .tab-link
+        background-color: $tab-inactive-color
+        border-top: $tab-border
+        color: $dark-gray
+        display: block
+        text-transform: uppercase
+        padding: $base-spacing / 2 $gutter / 2
+        text-decoration: none
+        +media($tab-mode)
+          +inline-block
+          border-top-left-radius: $base-border-radius
+          border-top-right-radius: $base-border-radius
+          border-top: 0
+
+        &:hover
+          color: $base-link-color
+        &:focus
+          outline: none
+        &.is-active
+          background-color: $tab-active-background
+          +media($tab-mode)
+            background-color: $tab-active-background
+            border: $tab-border
+            border-bottom-color: $tab-active-background
+            margin-bottom: -1px
+      .tab-content
+        background: $tab-content-background
+        display: none
+        padding: $base-spacing $gutter
+        width: 100%
+        +media($tab-mode)
+          border-bottom-left-radius: $base-border-radius
+          border-bottom-right-radius: $base-border-radius
+          border-top-right-radius: $base-border-radius
+          border: $tab-border
+          float: left

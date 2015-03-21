@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="ShopSpace">
   <div class="ShopIntro">
-    <h3>Free Range Factory Online Shop</h3>
-    <p>All Free Range Factory products are sold and send worldwide and can be
-      purchased using PayPal or any major credit card, directly from this website.
+    <h3>Online Shop</h3>
+    <p>All Free Range Factory products are sold worldwide and can be purchased
+      using PayPal or any major credit card, directly from this website.
       All payments are processed over the PayPal secured website. If you have any
       payment issue or if you are interested in large quantities or a special discount
       feel free to contact us.</p>
@@ -13,17 +13,31 @@ layout: default
       you check out (and before you enter your personal data) you can see the shipping
       fee.</p>
   </div>
+
   {% for ind in site.shop-items %}
   <div class="ShopItem">
     <div class="ShopItem-info">
-      <h3>{{ ind.title }}</h3>
-      <p>{{ ind.description }}</p>
-      <p>{{ ind.specs }}</p>
+      <h4>{{ ind.title }}</h4>
+      <ul class="accordion-tabs">
+        <li class="tab-header-and-content">
+          <a href="" class="tab-link is-active">Description</a>
+          <div class="tab-content">
+            <p>{{ ind.description }}</p>
+          </div>
+        </li>
+        <li class="tab-header-and-content">
+          <a href="" class="tab-link">Specifications</a>
+          <div class="tab-content">
+            {{ ind.specs }}
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="ShopItem-img">
-      <img src="{{ ind.img }}" alt="shopItem-img">
-      <button>BUY NOW, $149</button>
-    </div>
+  <div class="ShopItem-img">
+    <img src="{{ ind.img }}" alt="shopItem-img">
+    <button>BUY NOW, $149</button>
+  </div>
+
   </div>
   {% endfor %}
 </div>

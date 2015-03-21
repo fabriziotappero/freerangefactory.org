@@ -1,0 +1,11 @@
+
+Redesign home page links so that we use cvg icons and not immages.
+ Better to first try in a test page, or not.
+
+Redesign the structure of the shop. As it is not I cannot use markups for
+ shop item descriptions. Idea: put everything is a folder and each shop item
+ in a single file? Like for bblog posts.
+
+Contact link is now working but not scrolling smoothly..
+
+The overall website look needs to be reviewed. Colors, fonts, titles, spacing.
