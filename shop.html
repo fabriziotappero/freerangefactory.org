@@ -14,30 +14,31 @@ layout: default
       fee.</p>
   </div>
 
-  {% for ind in site.shop-items %}
-  <div class="ShopItem">
-    <div class="ShopItem-info">
-      <h4>{{ ind.title }}</h4>
-      <ul class="accordion-tabs">
-        <li class="tab-header-and-content">
-          <a href="" class="tab-link is-active">Description</a>
-          <div class="tab-content">
-            <p>{{ ind.description }}</p>
-          </div>
-        </li>
-        <li class="tab-header-and-content">
-          <a href="" class="tab-link">Specifications</a>
-          <div class="tab-content">
-            {{ ind.specs }}
-          </div>
-        </li>
-      </ul>
+  {% for page in site.pages %}
+    {% if page.categories contains 'shop' %}
+    <div class="ShopItem">
+      <div class="ShopItem-info">
+        <h4>{{ page.item-name }}</h4>
+        <ul class="accordion-tabs">
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link is-active">Description</a>
+            <div class="tab-content">
+              <p>{{ page.description | markdownify }}</p>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link">Specifications</a>
+            <div class="tab-content">
+              {{ page.specifications | markdownify }}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="ShopItem-img">
+        <img src="{{ page.img }}" alt="shopItem-img">
+        <button>BUY NOW</button>
+      </div>
     </div>
-  <div class="ShopItem-img">
-    <img src="{{ ind.img }}" alt="shopItem-img">
-    <button>BUY NOW, $149</button>
-  </div>
-
-  </div>
+    {% endif %}
   {% endfor %}
 </div>

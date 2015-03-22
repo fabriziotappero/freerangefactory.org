@@ -21,6 +21,8 @@ $mobile: new-breakpoint(max-width 450px)
 $tablet: new-breakpoint(max-width 760px min-width 451px)
 $desktop: new-breakpoint(min-width 761px)
 
+
+
 body
   margin: 0
   min-width: 320px
@@ -107,8 +109,6 @@ h1,h2,h3,h4,h5
       text-align: left
       @include media(max-width 990px)
       margin: 0 0 0.2em 0
-    p
-      font-size: 1.1em
 
 .cards
   @include outer-container
@@ -117,15 +117,17 @@ h1,h2,h3,h4,h5
   .card-inner
     margin: 1em
     padding: 1em
-    height: 330px
+    height: 350px
     background-color: lighten(gainsboro, 10%)
     border-radius: 3px
     border: 1px solid gainsboro
     box-shadow: 0 2px 4px darken(white, 10%)
+    @include media(max-width 990px)
+      height: 399px
     @include media($tablet)
       height: 270px
     @include media($mobile)
-      height: 280px
+      height: 320px
 
   .card
     cursor: pointer
@@ -147,11 +149,11 @@ h1,h2,h3,h4,h5
         +size(80px auto)
         @include media(max-width 990px)
           +size(50px auto)
-        path
-          fill: $icon-color
+        //path
+          //fill: $icon-color
 
     .card-header
-      font-size: 1.4em
+      font-size: 1.3em
       font-weight: bold
       color: $icon-color
       text-transform: uppercase
@@ -163,8 +165,8 @@ h1,h2,h3,h4,h5
 
 
     .card-copy
-      font-size: 0.9em
       padding: $base-spacing / 2 $base-spacing / 2
+      text-align: justify
 
     &:focus, &:hover
       .card-inner
@@ -176,7 +178,7 @@ h1,h2,h3,h4,h5
 
 // foter style
 .footer
-  font-size: 0.9em
+  font-size: 0.8em
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))
   height: 100px
   margin: 0
@@ -190,7 +192,6 @@ h1,h2,h3,h4,h5
 // shop section
 .ShopSpace
   @include outer-container
-  font-size: 1.125rem
   line-height: 1.6
   padding: 0 1em
 
@@ -209,6 +210,7 @@ h1,h2,h3,h4,h5
 
     .ShopItem-info
       @include span-columns(8)
+      text-align: justify
 
     .ShopItem-img
       @include span-columns(4)
@@ -291,3 +293,21 @@ h1,h2,h3,h4,h5
           border-top-right-radius: $base-border-radius
           border: $tab-border
           float: left
+
+// some coloring classes
+.red
+  svg
+    path
+      fill: #DF4C37
+.green
+  svg
+    path
+      fill: #019D59
+.yellow
+  svg
+    path
+      fill: #FFBA0F
+.blue
+  svg
+    path
+      fill: #3780F0
