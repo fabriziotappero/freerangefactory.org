@@ -16,12 +16,16 @@
 // Establish default settings/variables
 // ====================================
       var settings = $.extend({
-         maximum   : 9999,
-         minimum   : 1,
-         maxFont   : 9999,
-         minFont   : 1,
-         fontRatio : 35
+         maximum   : 1200,
+         minimum   : 500,
+         maxFont   : 40,
+         minFont   : 12,
+         fontRatio : 30
       }, options),
+
+// FlowType will stop resizing text once "page width" becomes
+// smaller than minimum or larger than maximum.
+
 
 // Do the magic math
 // =================

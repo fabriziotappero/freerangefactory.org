@@ -14,8 +14,12 @@ $landingPageImg: '{{ site.url }}/img/icons/logo_patent_camera.png'
 $base-spacing: 1.5em !default
 $base-color: #2989d8
 $base-color2:#1E589A
-$desktop: new-breakpoint(min-width 855px)
+$icon-color:#B35047
+$line-color:rgba(102, 71, 41, 0.7)
 
+$mobile: new-breakpoint(max-width 450px)
+$tablet: new-breakpoint(max-width 760px min-width 451px)
+$desktop: new-breakpoint(min-width 761px)
 
 body
   margin: 0
@@ -25,7 +29,7 @@ h1,h2,h3,h4,h5
   text-align: center
   text-transform: uppercase
   color: $base-color
-  margin: 3em auto 1em auto
+  margin: 1.5em auto 1em auto
 
 
 [class^="icon-"]
@@ -38,13 +42,16 @@ h1,h2,h3,h4,h5
 .nav
   .logo-nav
     svg
-      +size(200px auto)
+      margin: 0.8em 0 0 0.5em
+      +size(175px auto)
+      @include media($mobile)
+        +size(105px auto)
 
   .links
     float: right
     display: inline
     text-transform: uppercase
-    margin: 1em 0.5em 1em 0
+    margin: 0.4em 0.5em 1em 0
 
     a
       margin-left: 10px
@@ -70,29 +77,36 @@ h1,h2,h3,h4,h5
   color: white
 
   .landingPageImage
-    display: none
-    @include media($desktop)
-      background-image: url($landingPageImg)
-      background-size: cover
-      margin: 3em 1em auto auto
-      width: 450px
-      height: 411px
-      display: block
-      float: right
-      position: relative
+    //display: none
+    //@include media($desktop)
+    background-image: url($landingPageImg)
+    background-size: cover
+    margin: 3em 1em auto auto
+    width: 450px
+    height: 411px
+    display: block
+    float: right
+    position: relative
       //z-index: 1
+    @include media(max-width 900px)
+      width: 40%
+      //height: 50%
+    @include media(max-width 460px)
+      display: none
 
   .landingPage-inner
     text-align: left
     max-width: 700px
     padding: 3.5em 1em
-    @include media($desktop)
-      margin-left: 20px
+    margin-left: 20px
+
 
     h1,h2,h3,h4,h5
       color: white
       margin: 0 0 2em 0
       text-align: left
+      @include media(max-width 990px)
+      margin: 0 0 0.2em 0
     p
       font-size: 1.1em
 
@@ -102,52 +116,60 @@ h1,h2,h3,h4,h5
 
   .card-inner
     margin: 1em
-    //border: 1px solid black
-    height: 390px
+    padding: 1em
+    height: 330px
     background-color: lighten(gainsboro, 10%)
     border-radius: 3px
     border: 1px solid gainsboro
     box-shadow: 0 2px 4px darken(white, 10%)
-    @include media($desktop)
-      height: 430px
+    @include media($tablet)
+      height: 270px
+    @include media($mobile)
+      height: 280px
 
   .card
     cursor: pointer
     position: relative
     margin: 0
 
-    // mobile first
-    @include span-columns(12)
+    @include span-columns(6)
     @include omega
-    // desktop setup
-    @include media($desktop)
-      @include span-columns(6, table)
+
+    @include media($tablet)
+      @include span-columns(12)
+      @include omega
+    @include media($mobile)
+      @include span-columns(12)
       @include omega
 
     .card-image
-      overflow: hidden
-      max-height: 220px
-
-      img
-        width: 100%
-        opacity: 0.6
-        border-top-left-radius: 3px
-        border-top-right-radius: 3px
+      svg
+        +size(80px auto)
+        @include media(max-width 990px)
+          +size(50px auto)
+        path
+          fill: $icon-color
 
     .card-header
+      font-size: 1.4em
       font-weight: bold
+      color: $icon-color
+      text-transform: uppercase
       line-height: 1.5em
-      padding: $base-spacing / 3 $base-spacing / 2
+      padding: $base-spacing / 5 $base-spacing / 2
+      box-shadow: 0px 0.1875em $line-color
+      @include media(max-width 990px)
+        font-size: 1em
+
 
     .card-copy
-      font-size: 1em
-      line-height: 1.5em
+      font-size: 0.9em
       padding: $base-spacing / 2 $base-spacing / 2
 
-    &:focus,
-    &:hover
-      .card-image img
-        opacity: 0.9
+    &:focus, &:hover
+      .card-inner
+        background-color: lighten(gainsboro, 5%)
+
 
 // contact form style
 @import "contact"
