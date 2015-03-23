@@ -1,15 +1,63 @@
 
-Redesign home page links so that we use cvg icons and not immages.
- Better to first try in a test page, or not.
-
 Redesign the structure of the shop. As it is not I cannot use markups for
  shop item descriptions. Idea: put everything is a folder and each shop item
- in a single file? Like for bblog posts.
+ in a single file? Like for blog posts.
+ This is not done. But we want to put all the shop files in one single folder
+ called ·"shop".
 
-Contact link is now working but not scrolling smoothly..
+Contact link is now working but not scrolling smoothly...
 
 The overall website look needs to be reviewed. Colors, fonts, titles, spacing.
 
-The landing page patent image depends on some dir path. Make in relative
+The landing page patent image depends on some dir path. Make in relative.
+Make them relative. It looks like in DevTips theme it is possible.
 
-All home links are broken because done with "/". make them relative.
+All home links are broken because done with "/". make them relative. It looks
+like in DevTips theme it is possible.
+
+Learn how to loop in Jekyll.
+
+change div images to figues. like this:
+- <div class="client-face">
++ <figure class="client-face">
+
+Maybe stop using this strange font resizing js and use FitText like DevTips:
+- $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' })
++ $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
++ $(".biglink").fitText(1.5);
+
+Find out what 1 or 1.5 is. Example here:
+http://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0CEcQFjAG&url=http%3A%2F%2Frunnable.com%2FUmkGafbKkKwdAAAO%2Ffittext-example-responsive-text-with-specifying-compressor-and-min-max-font-size&ei=mDMQVcTnO4q3yATIx4HwBQ&usg=AFQjCNFqvIvUzs4XHQLWut9Nv_OiHAXKgA&sig2=0y7I9PWMr73r7GZfHYiGfA&bvm=bv.88528373,d.aWw
+
+resize text with:
+@media screen and (max-width: 40em) {
+    body {
+        font-size:90%;}
+}
+
+and this:
+http://codepen.io/SaraSoueidan/pen/d50f857e8cc1d79a0de9b7a3f940b48c
+
+OR MAYBE JUST LEAR THIS
+http://simplefocus.com/flowtype/
+
+
+The shop page should not start with boring explanations. Put explanations at
+the end or hidden. We should start with a nice title and funny sentence.
+Important info:
+
+TITLE: (cart) Jucy Online Shop
+
+(credit card) Secure PayPal Payment Methods
+(World) We Shipping Worldwide
+(lifebuoy) 15 days Full Refund.
+(track) Reasonable Shipping Fees
+(office) Buy directly from Makers
+
+
+For shop, change .yaml file for .md file. Is is possible_ what is the difference?
+Also, can we loop inside a folder? is it maybe better just have one big shop.md
+in the root folder and loop there?
+Just try to create a subfolder and put a .rm file in it and see if I can import
+and maybe process. Do this using the test.html file.
+AWAYS TEST FIRST WITH TEST.HTML

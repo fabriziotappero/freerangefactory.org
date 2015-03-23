@@ -10,7 +10,7 @@
 @import "base/base"
 
 // TODO: fix image path
-$landingPageImg: '{{ site.url }}/img/icons/logo_patent_camera.png'
+$landingPageImg: '../img/icons/logo_patent_camera.png'
 $base-spacing: 1.5em !default
 $base-color: #2989d8
 $base-color2:#1E589A
@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5
 
 [class^="icon-"]
   svg
-    +size(28px)
+    +size(28px 28px)
     margin: auto auto -6px auto
     path
       fill: $base-color
@@ -45,9 +45,9 @@ h1,h2,h3,h4,h5
   .logo-nav
     svg
       margin: 0.8em 0 0 0.5em
-      +size(175px auto)
+      +size(200px 75px)
       @include media($mobile)
-        +size(105px auto)
+        +size(100px 37px)
 
   .links
     float: right
@@ -146,11 +146,9 @@ h1,h2,h3,h4,h5
 
     .card-image
       svg
-        +size(80px auto)
+        +size(80px 80px)
         @include media(max-width 990px)
-          +size(50px auto)
-        //path
-          //fill: $icon-color
+          +size(50px 50px)
 
     .card-header
       font-size: 1.3em
