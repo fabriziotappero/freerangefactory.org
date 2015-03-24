@@ -1,0 +1,37 @@
+---
+categories: shop, book
+item-name: Free Range VHDL - Book
+img: img/free_range_vhdl_book.png
+price: US$20
+button_txt: BUY NOW
+button_link:
+description: |
+  This book is a fundamental guide to develop the skills necessary to write
+  powerful VHDL code. The approach taken by this book is to provide only what
+  you need to know to get up and running quickly in VHDL. As with all learning,
+  once you have obtained and applied some useful information, it is much easier
+  to build on what you know as opposed to continually adding information that is
+  not directly applicable to the subjects at hand.
+
+  This book was written with the intention of being **freely available to
+  everybody**. To support our work, a paperback version can be purchased from
+  our on-line store. Alternatively, please consider a donation.
+
+  VHDL is an extremely powerful tool. The more you understand as you work and
+  study with VHDL, the more it will enhance your learning experience
+  independently of your particular area of interest. The concept of using
+  software to design hardware that is controlled by software will definitely
+  provide you with endless hours of contemplation.
+
+specifications: |
+  + **Book Title:** Free Range VHDL. The no-frills guide to writing powerful
+      code for your digital implementations.
+  + **Pages:** approx. 200.
+  + **Authors:** Bryan Mealy, Fabrizio Tappero.
+  + **License:** Creative Commons Attribution-ShareAlike Unported License.
+      Download: PDF or Tex files.
+  + **Last update:** 2015
+  + **Additional Info:** The PDF of the book is freely available for
+      [download](pdf/free_range_vhdl.pdf){:target="_blank"} the TEX files available also from our
+      [Github repository](http://github.com/fabriziotappero/Free-Range-VHDL-book){:target="_blank"}.
+---

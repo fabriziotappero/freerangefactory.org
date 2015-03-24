@@ -2,21 +2,30 @@
 layout: default
 ---
 <div class="ShopSpace">
-  <div class="ShopIntro">
-    <h3>Online Shop</h3>
-    <p>All Free Range Factory products are sold worldwide and can be purchased
-      using PayPal or any major credit card, directly from this website.
+  <h3>Our Jucy Online Shop</h3>
+  <div class="ShopIntro_half-width1">
+    <ul>
+      <li><span class='blue'>{% include_relative img/icons/icon-credit-card.html %}</span>Secure PayPal Payment</li>
+      <li><span class='green'>{% include_relative img/icons/icon-earth.html %}</span>We Shipping Worldwide</li>
+      <li><span class='red'>{% include_relative img/icons/icon-truck.html %}</span>15 days Full Refund</li>
+      <li><span class='yellow'>{% include_relative img/icons/icon-office.html %}</span>Buy directly from Makers</li>
+    </ul>
+  </div>
+  <div class="ShopIntro_half-width2">
+    <p>Free Range Factory products are sold worldwide and can be purchased
+      using any major credit card, directly from this website.
       All payments are processed over the PayPal secured website. If you have any
       payment issue or if you are interested in large quantities or a special discount
       feel free to contact us.</p>
     <p>The shipping rate depends on the amount of material you order. As soon as
-      you check out (and before you enter your personal data) you can see the shipping
+      you check out, and before you enter your personal data, you can see the shipping
       fee.</p>
   </div>
 
   {% for page in site.pages %}
     {% if page.categories contains 'shop' %}
     <div class="ShopItem">
+      <hr/>
       <div class="ShopItem-info">
         <h4>{{ page.item-name }}</h4>
         <ul class="accordion-tabs">
@@ -36,9 +45,11 @@ layout: default
       </div>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
-        <button>BUY NOW</button>
+        <span class="price">{{ page.price }}</span>
+        <a href="{{ page.button_link }}"><button>{{ page.button_txt }}</button></a>
       </div>
     </div>
     {% endif %}
   {% endfor %}
+
 </div>

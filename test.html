@@ -1,44 +1,10 @@
 ---
 layout: default
 ---
-<div class="ShopSpace">
-  <div class="ShopIntro">
-    <h3>Online Shop</h3>
-    <p>All Free Range Factory products are sold worldwide and can be purchased
-      using PayPal or any major credit card, directly from this website.
-      All payments are processed over the PayPal secured website. If you have any
-      payment issue or if you are interested in large quantities or a special discount
-      feel free to contact us.</p>
-    <p>The shipping rate depends on the amount of material you order. As soon as
-      you check out (and before you enter your personal data) you can see the shipping
-      fee.</p>
-  </div>
 
   {% for page in site.pages %}
     {% if page.categories contains 'shop' %}
-    <div class="ShopItem">
-      <div class="ShopItem-info">
-        <h4>{{ page.item-name }}</h4>
-        <ul class="accordion-tabs">
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link is-active">Description</a>
-            <div class="tab-content">
-              <p>{{ page.description | markdownify }}</p>
-            </div>
-          </li>
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link">Specifications</a>
-            <div class="tab-content">
-              {{ page.specifications | markdownify }}
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="ShopItem-img">
-        <img src="{{ page.img }}" alt="shopItem-img">
-        <button>BUY NOW</button>
-      </div>
-    </div>
+    <p>BINGO</p>
     {% endif %}
   {% endfor %}
 </div>
