@@ -25,6 +25,12 @@ body
   margin: 0
   min-width: 320px
 
+  // very global responsive font size reduction
+  p
+    @include media(max-width 550px)
+      font-size: 0.93em
+      line-height: 0.95em * 1.4
+
 h1,h2,h3,h4,h5
   text-align: center
   text-transform: uppercase
@@ -103,7 +109,8 @@ button
   .landingPage-inner
     text-align: left
     max-width: 700px
-    padding: 3.5em 1em
+    padding: 2em 0 0 0
+    //padding: 3.5em 0.3em
     margin-left: 20px
 
     h1,h2,h3,h4,h5
@@ -111,7 +118,7 @@ button
       margin: 0 0 2em 0
       text-align: left
       @include media(max-width 990px)
-        margin: 0 0 0.2em 0
+        margin: 0 0 0.5em 0
 
 
 .cards
