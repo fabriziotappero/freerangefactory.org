@@ -5,10 +5,10 @@ description: "The best place to improve your embedded design skills."
 rel-author: "https://freerangefactory.org"
 rel-publisher: "https://freerangefactory.org"
 
-baseurl: ""
-#url: "http://freerangefactory.org"                          # FINAL PRODUCT
-#url: "http://fabriziotappero.github.io/freerangefactory.org"# DEVELOPMENT ONLINE
-url: "http://localhost:4000/"                                # DEVELOPMENT LOCAL
+baseurl: "/" # change it if your site goes inside a subfolder.
+             # For example: baseurl: "/site/"
+url: "http://freerangefactory.org"
+
 
 # Build settings
 markdown: kramdown
