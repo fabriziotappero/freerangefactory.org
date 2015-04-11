@@ -56,3 +56,7 @@ in the root folder and loop there?
 Just try to create a subfolder and put a .rm file in it and see if I can import
 and maybe process. Do this using the test.html file.
 AWAYS TEST FIRST WITH TEST.HTML
+
+
+Mnicart solution for shipping calculation based on weight
+https://github.com/jeffharrell/minicart/issues/197

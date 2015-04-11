@@ -37,10 +37,6 @@ h1,h2,h3,h4,h5
   color: $base-color
   margin: 1.5em auto 1em auto
 
-button
-  font-weight: normal
-  padding: 0.7em 0.2em
-
 
 [class^="icon-"]
   svg
@@ -74,11 +70,19 @@ button
     a.red
       background-color: red
       color: white
-      padding: 0 0.3em
-      border-radius: 4px
+      padding: 0.1em 0.3em
+      border-radius: 3px
 
       &:hover
         background-color: rgba( red, .7 )
+
+
+.global_page_wrap
+
+  button
+    font-weight: normal
+    padding: 0.7em 0.2em
+
 
 .landingPage
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))
@@ -121,36 +125,36 @@ button
         margin: 0 0 0.5em 0
 
 
-.cards
+.cards, .outer-full
   @include outer-container
   padding: 0
+  p
+    color: #333
 
   .card-inner
     margin: 1em
     padding: 1em
-    height: 350px
+    height: 300px
     background-color: lighten(gainsboro, 10%)
     border-radius: 3px
     border: 1px solid gainsboro
     box-shadow: 0 2px 4px darken(white, 10%)
-    @include media(max-width 990px)
-      height: 399px
     @include media($tablet)
-      height: 270px
+      height: 250px
     @include media($mobile)
-      height: 320px
+      height: 290px
 
   .card
+    @include span-columns(6)
+    @include omega
     cursor: pointer
     position: relative
     margin: 0
 
-    @include span-columns(6)
-    @include omega
-
     @include media($tablet)
       @include span-columns(12)
       @include omega
+
     @include media($mobile)
       @include span-columns(12)
       @include omega
@@ -182,6 +186,7 @@ button
         background-color: lighten(gainsboro, 5%)
 
 
+
 // contact form style
 @import "contact"
 
@@ -205,7 +210,7 @@ button
   padding: 0 1em
 
   h1, h2, h3, h4, h5
-    margin: 0 0 1em 0
+    margin: 1em 0 1em 0
 
   .ShopIntro_half-width1
     @include span-columns(6)
@@ -222,6 +227,7 @@ button
       color: $heading-color
       text-transform: uppercase
       line-height: 3em
+      font-size: 1.2em
 
   .ShopIntro_half-width2
     @include span-columns(6)
@@ -261,7 +267,7 @@ button
       $base-link-color: $base-accent-color !default
       $dark-gray: #333333 !default
       $light-gray: #dddddd !default
-      $medium-screen: em(640) !default
+      $medium-screen: em(500) !default
       ////////////////////////////////////////////////////
       $tab-border: 1px solid $base-border-color
       $tab-content-background: lighten($light-gray, 10)
@@ -297,7 +303,7 @@ button
         color: $dark-gray
         display: block
         text-transform: uppercase
-        padding: $base-spacing / 2 $gutter / 2
+        padding: $base-spacing / 2 $gutter / 3
         text-decoration: none
         +media($tab-mode)
           +inline-block
@@ -319,7 +325,7 @@ button
       .tab-content
         background: $tab-content-background
         display: none
-        padding: $base-spacing $gutter
+        padding: $base-spacing/1.5 $gutter/1.5
         width: 100%
         +media($tab-mode)
           border-bottom-left-radius: $base-border-radius
@@ -351,3 +357,15 @@ hr
   background: $line-color
   width: 100%
   height: 2px
+
+.three-equal-dist
+  @include span-columns(4)
+  @include omega
+  padding: 1.5em 0
+
+  img:focus, &:hover
+    background-color: lighten(gainsboro, 5%)
+
+.full-page
+  @include span-columns(12)
+  @include omega

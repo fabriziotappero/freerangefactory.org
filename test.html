@@ -1,10 +1,55 @@
 ---
-layout: default
+layout: test
 ---
+<p>
+  This is a test of minicart. I'd like the shipping cost to be based on the
+  total weight:
+</p>
+<p>
+  total_shipping_cost= fixed_shipping_cost + total_weight * cost_per_gram
+</p>
 
-  {% for page in site.pages %}
-    {% if page.categories contains 'shop' %}
-    <p>BINGO</p>
-    {% endif %}
-  {% endfor %}
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="add" value="1" />
+        <input type="hidden" name="business" value="example@minicartjs.com" />
+        <input type="hidden" name="item_name" value="Great product 1" />
+        <input type="hidden" name="item_number" value="3424349" />
+        <input type="hidden" name="quantity" value="1" />
+        <input type="hidden" name="weight" value="320" />
+        <input type="hidden" name="amount" value="150.00" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="shipping" value="10.00">
+        <input type="hidden" name="shipping2" value="2.20">
+        <strong>Item 1, $150</strong>
+        <input type="submit" name="submit" value="BUY NOW" />
+</form>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="add" value="1" />
+        <input type="hidden" name="business" value="example@minicartjs.com" />
+        <input type="hidden" name="item_name" value="Great product 2" />
+        <input type="hidden" name="item_number" value="1992373" />
+        <input type="hidden" name="quantity" value="1" />
+        <input type="hidden" name="weight" value="180" />
+        <input type="hidden" name="amount" value="100.00" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="shipping" value="5.00">
+        <input type="hidden" name="shipping2" value="1.01">
+        <strong>Item 2, $100</strong>
+        <input type="submit" name="submit" value="BUY NOW" />
+</form>
+
+
+
+<div class="myCart">
+<form class="last" method="post" action="https://www.sandbox.paypal.com/cgi-bin/webscr">
+    <fieldset style="border:0; background:none; margin:0; padding:0;">
+        <input type="hidden" value="example@minicartjs.com" name="business"></input>
+        <input type="hidden" value="_cart" name="cmd"></input>
+        <input type="hidden" value="1" name="display"></input>
+        <input class="button" type="submit" value="My Cart" name="submit" style="background: none; border: none; color: red; text-decoration: none; cursor: pointer;"></input>
+    </fieldset>
+</form>
 </div>
