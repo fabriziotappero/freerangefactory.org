@@ -14,16 +14,16 @@ layout: default
   <div class="ShopIntro_half-width2">
     <p>Free Range Factory products are sold worldwide and can be purchased
       using any major credit card, directly from this website.
-      All payments are processed over the PayPal secured website. If you have any
-      payment issue or if you are interested in large quantities or a special discount
-      feel free to contact us.</p>
+      All payments are processed over the PayPal secured website. If you have
+      any payment issue or if you are interested in large quantities or a
+      special discount feel free to contact us.</p>
     <p>The shipping rate depends on the amount of material you order. As soon as
-      you check out, and before you enter your personal data, you can see the shipping
-      fee.</p>
+      you check out, and before you enter your personal data, you can see the
+      shipping fee.</p>
   </div>
 
   {% for page in site.pages %}
-    {% if page.categories contains 'shop' %}
+    {% if page.categories contains 'selling' %}
     <div class="ShopItem">
       <hr/>
       <div class="ShopItem-info">
@@ -45,7 +45,7 @@ layout: default
       </div>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
-        <span class="price">{{ page.price }}</span>
+        <span class="price">{{ page.price_euros }} &#8364;</span>
         <a href="{{ page.button_link }}"><button>{{ page.button_txt }}</button></a>
       </div>
     </div>

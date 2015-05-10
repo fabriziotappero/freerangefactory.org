@@ -1,13 +1,16 @@
 ---
-categories: shop, electronics
+categories: selling, electronics, fpga
 item-name: XuLA FPGA Board
 img: img/xula1.png
-price: US$80
+reference: xula1_board
+price_euros: 71.00
+weight_g: 10.0
+min_quantity: 1
 button_txt: BUY NOW
 button_link:
+status: available
 description: |
-  The XuLA is an exceptional entry-level FPGA experimental board that
-  packs a
+  The XuLA is an exceptional entry-level FPGA experimental board that packs a
   [Xilinx Spartan 3A](http://www.xilinx.com/support/documentation/data_sheets/ds529.pdf){:target="_blank"}
   200,000 gate FPGA, 8 MByte SDRAM, 2 Mbit flash, two voltage regulators and a
   supervisory Microchip microcontroller into a 51mmX25mm footprint.

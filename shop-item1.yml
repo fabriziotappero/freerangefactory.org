@@ -1,10 +1,14 @@
 ---
-categories: shop, electronics
+categories: selling, electronics, fpga
 item-name: XuLA 2 FPGA Board
 img: img/xula2.png
-price: US$150
+reference: xula2_board
+price_euros: 133.00
+weight_g: 10.0
+min_quantity: 1
 button_txt: BUY NOW
 button_link:
+status: available
 description: |
   The XuLA 2 board is an innovative open-source FPGA-based experimental board that
   packs a
