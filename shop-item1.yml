@@ -2,7 +2,7 @@
 categories: selling, electronics, fpga
 item-name: XuLA 2 FPGA Board
 img: img/xula2.png
-reference: xula2_board
+item-ref: ref.: xula2_board
 price_euros: 133.00
 weight_g: 10.0
 min_quantity: 1
