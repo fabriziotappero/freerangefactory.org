@@ -1,45 +1,71 @@
-{% for page in site.pages %}
-  {% if page.categories contains 'selling' %}
-  <div class="ShopItem">
-    <hr/>
-    <div class="ShopItem-info">
-      <h4>{{ page.item-name }}</h4>
-      <ul class="accordion-tabs">
-        <li class="tab-header-and-content">
-          <a href="" class="tab-link is-active">Description</a>
-          <div class="tab-content">
-            <p>{{ page.description | markdownify }}</p>
-          </div>
-        </li>
-        <li class="tab-header-and-content">
-          <a href="" class="tab-link">Specifications</a>
-          <div class="tab-content">
-            {{ page.specifications | markdownify }}
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="ShopItem-img">
-      <img src="{{ page.img }}" alt="shopItem-img">
-      <span class="price">{{ page.price_euros }} &#8364;</span>
-
-      <span id="PayPalMiniCart">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-          <input type="hidden" name="cmd" value="_cart" />
-          <input type="hidden" name="add" value="1" />
-          <input type="hidden" name="business" value="Z6MSNKU6TZ86Q" />
-          <input type="hidden" name="item_name" value="{{ page.item-name }}
-          <input type="hidden" name="item_number" value="{{ page.item-ref }}" />
-          <input type="hidden" name="quantity" value="{{ page.min_quantity }}" />
-          <input type="hidden" name="amount" value="{{ page.price_euros }}" />
-          <input type="hidden" name="currency_code" value="EUR" />
-          <input type="hidden" name="weight_g" value="{{ page.weight_g }}">
-          <input type='hidden' name='image_url' value='{{ site.url/img/icons/logo-frf.svg }}'/>
-          <input type="submit" name="submit" value="{{ page.button_txt }}" />
-        </form>
-      </span>
-
-    </div>
+---
+layout: default
+---
+<div class="ShopSpace">
+  <h3>Our Jucy Online Shop</h3>
+  <div class="ShopIntro_half-width1">
+    <ul>
+      <li><span class='blue'>{% include_relative img/icons/icon-credit-card.html %}</span>Secure PayPal Payment</li>
+      <li><span class='green'>{% include_relative img/icons/icon-earth.html %}</span>We Shipping Worldwide</li>
+      <li><span class='red'>{% include_relative img/icons/icon-truck.html %}</span>15 days Full Refund</li>
+      <li><span class='yellow'>{% include_relative img/icons/icon-office.html %}</span>Buy from Makers</li>
+    </ul>
   </div>
-  {% endif %}
-{% endfor %}
+  <div class="ShopIntro_half-width2">
+    <p>Free Range Factory products are sold worldwide and can be purchased
+      using any major credit card, directly from this website.
+      All payments are processed over the PayPal secured website. If you have any
+      payment issue or if you are interested in large quantities or a special discount
+      feel free to contact us.</p>
+    <p>The shipping rate depends on the amount of material you order. As soon as
+      you check out, and before you enter your personal data, you can see the shipping
+      fee.</p>
+  </div>
+
+  {% for page in site.pages %}
+    {% if page.categories contains 'selling' %}
+    <div class="ShopItem">
+      <hr/>
+      <div class="ShopItem-info">
+        <h4>{{ page.item-name }}</h4>
+        <ul class="accordion-tabs">
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link is-active">Description</a>
+            <div class="tab-content">
+              <p>{{ page.description | markdownify }}</p>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link">Specifications</a>
+            <div class="tab-content">
+              {{ page.specifications | markdownify }}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="ShopItem-img">
+        <img src="{{ page.img }}" alt="shopItem-img">
+        <span class="price">{{ page.price_euros }} &#8364;</span>
+
+        <span id="PayPalMiniCart">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_cart" />
+            <input type="hidden" name="add" value="1" />
+            <input type="hidden" name="business" value="Z6MSNKU6TZ86Q" />
+            <input type="hidden" name="item_name" value="{{ page.item-name }}" />
+            <input type="hidden" name="item_number" value="{{ page.item-ref }}" />
+            <input type="hidden" name="quantity" value="{{ page.min_quantity }}" />
+            <input type="hidden" name="amount" value="{{ page.price_euros }}" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="hidden" name="weight_g" value="{{ page.weight_g }}">
+            <input type='hidden' name="image_url" value="{{ site.url/img/icons/logo-frf.png }}"/>
+            <input type="submit" name="submit" value="{{ page.button_txt }}" />
+          </form>
+        </span>
+
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+</div>

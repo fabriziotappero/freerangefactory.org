@@ -76,24 +76,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
-
-// PayPal shopping cart
-$(document).ready(function () {
-  paypal.minicart.render();
-
-  paypal.minicart.cart.on('checkout', function (evt) {
-    var items, len, i;
-
-    if (this.subtotal() > 0) {
-      items = this.items();
-
-      for (i = 0, len = items.length; i < len; i++) {
-        items[i].set('shipping', 0);
-        items[i].set('shipping2', 0);
-      }
-    }
-  });
-
-});
