@@ -2,7 +2,7 @@
 categories: selling, electronics, generic
 item-name: Teensy - ARM Development Board
 img: img/teensy.png
-reference: teensy_arm_board
+item-ref: reference teensy_arm_board
 price_euros: 21.00
 weight_g: 10.0
 min_quantity: 1
