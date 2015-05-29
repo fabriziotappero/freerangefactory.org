@@ -2,7 +2,7 @@
 categories: selling, electronics, generic
 item-name: 4.5-28V, 3A Voltage Regulator
 img: img/dcdc_converter.png
-reference: dcdc_converter
+item-ref: reference dcdc_converter 1
 price_euros: 3.00
 weight_g: 5.0
 min_quantity: 5
