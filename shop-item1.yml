@@ -35,8 +35,7 @@ specifications: |
   + **Micro:** Microchip PIC 18F14K50 for FPGA programming.
   + **Communications:** USB 2.0 communication port, JTAG port.
   + **Documentation:** User manual, board schematics, PCB Layout (Cadsoft Eagle)
-    is all open source and available for download from the
-    [XuLA 2 Github repository](http://github.com/fabriziotappero/XuLA2){:target="_blank"}.
+    is all open source and available for download from the [XuLA 2 Github repository](http://github.com/fabriziotappero/XuLA2).
   + **Note:** Programmable with XILINX ISE (Windows and Linux) and with the
     open-source software XSTOOLS. Works with XILINX iMPACT and ChipScope
     via the Xilinx JTAG adapter.
