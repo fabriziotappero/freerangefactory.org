@@ -13,6 +13,7 @@ layout: default
   </section>
 
   <h3 id="activities">Where to start</h3>
+
     <section class="cards">
       <div class="card">
         <div class="card-inner">
@@ -27,16 +28,18 @@ layout: default
     </div>
 
       <div class="card">
-        <div class="card-inner">
-          <div class="card-image red">{% include_relative img/icons/icon-elec.html %}</div>
-        <div class="card-header">Development Boards</div>
-        <div class="card-copy">
-          <p>Buy some of the most powerfull and versatile ARM and FPGA boards.
-            All development boards from Free Range Factory are
-            open source with schematics available for download.</p>
+        <a href="dev_boards.html">
+          <div class="card-inner">
+            <div class="card-image red">{% include_relative img/icons/icon-elec.html %}</div>
+            <div class="card-header">Development Boards</div>
+              <div class="card-copy">
+                <p>Buy some of the most powerfull and versatile ARM and FPGA boards.
+                  All development boards from Free Range Factory are
+                  open source with schematics available for download.</p>
+              </div>
+          </div>
+        </a>
         </div>
-      </div>
-    </div>
 
       <div class="card">
         <div class="card-inner">
@@ -52,7 +55,7 @@ layout: default
 
       <div class="card">
         <a href="pcb.html">
-        <div class="card-inner">    
+        <div class="card-inner">
           <div class="card-image yellow">{% include_relative img/icons/icon-pcb.html %}</div>
         <div class="card-header">Printed Circuit Board</div>
         <div class="card-copy">

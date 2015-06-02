@@ -62,9 +62,13 @@ $(document).ready(function () {
     $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
   });
 
-  $('.accordion-tabs').on('click', 'li > a', function(event) {
+  // this correction was necessary to prevent the mulfunciton of links
+  // placed inside the tab space.
+  //$('.accordion-tabs').on('click', 'li > a', function(event) {
+  $('.accordion-tabs').on('click', 'li > a.tab-link', function(event) {
     if (!$(this).hasClass('is-active')) {
       event.preventDefault();
+      console.log("bingo");
       var accordionTabs = $(this).closest('.accordion-tabs');
       accordionTabs.find('.is-open').removeClass('is-open').hide();
 

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="ShopSpace">
+  <h3>Free Range Factory Development Boards</h3>
+  <p>Free Range Factory bases its development on various popular open-source
+     boards where schematics are freely available.</p>
+  <p>Here you can find all the information you need to have to get started with your
+    own development. In case you are interested in buying these dev. boards please have
+    a look at out <a href="shop.html">on-line shop</a>.</p>
+  {% for page in site.pages %}
+    {% if page.categories contains 'dev_board' %}
+    <div class="ShopItem">
+      <hr/>
+      <div class="ShopItem-info">
+        <h4>{{ page.item-name }}</h4>
+        <ul class="accordion-tabs">
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link is-active">Description</a>
+            <div class="tab-content">
+              <p>{{ page.description | markdownify }}</p>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link">Specifications</a>
+            <div class="tab-content">
+              {{ page.specifications | markdownify }}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="ShopItem-img">
+        <img src="{{ page.img }}" alt="shopItem-img">
+
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+</div>

@@ -127,22 +127,22 @@ h1,h2,h3,h4,h5
 
 .cards, .outer-full
   @include outer-container
-  padding: 30px
+  padding: 0px
   p
     color: #333
 
   .card-inner
     margin: 1em
     padding: 1em
-    height: 460px
+    height: 305px
     background-color: lighten(gainsboro, 10%)
     border-radius: 3px
     border: 1px solid gainsboro
     box-shadow: 0 2px 4px darken(white, 10%)
     @include media($tablet)
-      height: 330px
+      height: 245px
     @include media($mobile)
-      height: 450px
+      height: 285px
 
   .card
     @include span-columns(6)

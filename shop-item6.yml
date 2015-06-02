@@ -1,6 +1,6 @@
 ---
-categories: selling, electronics, generic
-item-name: Teensy - ARM Dev. Board
+categories: selling, electronics, dev_board, generic
+item-name: Teensy ARM Board
 img: img/teensy.png
 item-ref: teensy_arm_board
 price_euros: 21.00
@@ -31,5 +31,5 @@ specifications: |
     12 PWM outputs.
   + **Size:** 35mmX18mm.
   + **Weight:** 4g.
-  + **Note:** None.
+  + **Note:** Schematic and pinout [available](pdf/teensy31_schematic.pdf).
 ---
