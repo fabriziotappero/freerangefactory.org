@@ -7,7 +7,7 @@ price_euros: 0.00
 weight_g: 150.0
 min_quantity: 1
 button_txt: Free PDF
-button_link: pdf/xula2_reference_manual.pdf
+pdf_link: pdf/xula2_reference_manual.pdf
 status: not available
 description: |
   No electronics hardware can be really exceptional without a proper Reference
@@ -24,5 +24,5 @@ specifications: |
 
   + **Last update:** 2015.
 
-  + **Additional Info:** Free PDF.
+  + **Additional Info:** Free PDF and libreoffice files available for download.
 ---

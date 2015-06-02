@@ -7,7 +7,7 @@ price_euros: 18.00
 weight_g: 200.0
 min_quantity: 1
 button_txt: BUY NOW
-button_link:
+pdf_link: pdf/free_range_vhdl.pdf
 status: available
 description: |
   This book is a fundamental guide to develop the skills necessary to write
@@ -33,9 +33,7 @@ specifications: |
   + **Pages:** approx. 200.
   + **Authors:** Bryan Mealy, Fabrizio Tappero.
   + **License:** Creative Commons Attribution-ShareAlike Unported License.
-      Download: PDF or Tex files.
-  + **Last update:** 2015
-  + **Additional Info:** The PDF of the book is freely available for
-      [download](pdf/free_range_vhdl.pdf){:target="_blank"} the TEX files available also from our
+  + **Last update:** 2015.
+  + **Additional Info:** The PDF and the TEX files of the book are available from our
       [Github repository](http://github.com/fabriziotappero/Free-Range-VHDL-book){:target="_blank"}.
 ---
