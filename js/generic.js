@@ -19,7 +19,8 @@ $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
 $(window).resize(function() {
  var heig = $(".card-inner").first().height(); // first card element encountered
  $("div.card-inner:not(:first)").each(function(index) {
-  //$(this).height(heig);});
+  //$(this).height(heig);
+  });
 });
 
 $(function () {
