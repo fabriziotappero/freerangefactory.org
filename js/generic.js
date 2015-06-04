@@ -13,7 +13,6 @@ $(document).ready(function() {
 $("#fittext0").fitText();
 $("#fittext1").fitText(1.7,{ minFontSize: '22px', maxFontSize: '28px' });
 $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
-
  });
 
 // every time you resize the window set equale height for all cards in homepage
@@ -21,10 +20,6 @@ $(window).resize(function() {
  var heig = $(".card").height(); // first card element encountered
  $(".card").each(function(index) {
   $(this).height(heig);});
-  console.log("bingo");
-});
-
-$(function(){
 });
 
 $(function () {
