@@ -16,12 +16,14 @@ $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
 
  });
 
-// set equale height for all cards in homepage
-$(function(){
+// every time you resize the window set equale height for all cards in homepage
+$(window).resize(function() {
  var heig = $(".card").height(); // first card encountered
  $(".card").each(function(index) {
-  $(this).height(heig);
- });
+  $(this).height(heig);});
+});
+
+$(function(){
 });
 
 $(function () {
