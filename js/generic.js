@@ -17,7 +17,12 @@ $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
  });
 
 // set equale height for all cards in homepage
-$(function(){ $('#equalize').equalHeights(); });
+$(function(){
+ var heig = $("#equalize").height(); // first card encountered
+ $("#equalize").each(function(index) {
+  $(this).height(heig);
+ });
+});
 
 $(function () {
   /* IP Cores search field */
