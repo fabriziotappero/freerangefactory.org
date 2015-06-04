@@ -17,9 +17,9 @@ $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
 
 // every time you resize the window set equale height for all cards in homepage
 $(window).resize(function() {
- var heig = $(".card-inner").first().height(); // first card element encountered
- $("div.card-inner:not(:first)").each(function(index) {
-  $(this).height(heig-10);});
+ var heig = $(".card").first().height(); // first card element encountered
+ $("div.card:not(:first)").each(function(index) {
+  $(this).height(heig);});
 });
 
 $(function () {
