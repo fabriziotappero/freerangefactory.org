@@ -18,8 +18,8 @@ $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
 
 // set equale height for all cards in homepage
 $(function(){
- var heig = $("#equalize").height(); // first card encountered
- $("#equalize").each(function(index) {
+ var heig = $(".card").height(); // first card encountered
+ $(".card").each(function(index) {
   $(this).height(heig);
  });
 });
