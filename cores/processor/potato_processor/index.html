@@ -78,12 +78,18 @@
        Supports the csrr\* and sret instructions from the RISC-V supervisor extensions draft, version 1.0.
       </li>
       <li>
+       Includes a simple, direct-mapped instruction cache for high-speed performance./li&gt;
+      </li>
+      <li>
        Includes a HTIF interface that can be used with the FROMHOST/TOHOST registers.
       </li>
       <li>
        Includes a Wishbone interface for integration into Wishbone-based systems.
       </li>
      </ul>
+    </p>
+    <p>
+     The processor has been tested on a Nexys 4 board from Digilent. The design used for testing is included in the source distribution, with instructions on how to get it up and running.
     </p>
     <p>
      A rudimentary reference manual is available:
@@ -154,10 +160,10 @@
 Planned features include (in prioritized order):
      <ul>
       <li>
-       Caches (in progress)
+       Support for the new supervisor spec, with new CSR names and instructions (in progress)
       </li>
       <li>
-       Support for the new supervisor spec, with new CSR names and instructions (in progress)
+       Data memory cache
       </li>
       <li>
        Branch prediction
@@ -177,4 +183,4 @@ Planned features include (in prioritized order):
  </div>
 </div>
 </body>
-<p id='foot'>Database updated on 03 June 2015 by freerangefactory.org</p>
+<p id='foot'>Database updated on 05 June 2015 by freerangefactory.org</p>
