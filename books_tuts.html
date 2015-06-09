@@ -33,9 +33,7 @@ layout: default
         <img src="{{ page.img }}" alt="shopItem-img">
         
         <div class="modal">
-          <label for="modal-1">
-            <div class="modal-trigger">Download PDF</div>
-          </label>
+          <label for="modal-1"><div class="modal-trigger">Download PDF</div></label>
           <input class="modal-state" id="modal-1" type="checkbox"/>
           <div class="modal-fade-screen">
             <div class="modal-inner">
@@ -45,10 +43,12 @@ layout: default
               <p class="modal-content">An uncountable amount of hours was invested in
               the creation of this book. We made it free because that is what we want.
               We however would love some money!</p>
-              <a href="{{ page.pdf_link }}"><button>Free PDF</button></a>
+              <a href=""><button>Donation</button></a>
+              <a href="{{ page.pdf_link }}"><button>PDF</button></a>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
     {% endif %}
