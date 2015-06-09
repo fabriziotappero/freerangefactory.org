@@ -1,0 +1,72 @@
+<head>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Go Back</a>
+<p align='right'><a href='No_svn_archive_link_available.tar.gz'>Source code</a></p>
+<body>
+<div class="main">
+ <div class="mid" id="dm">
+  <div class="content" id="dmc">
+   <h2>
+    Details
+   </h2>
+   <p>
+    Name: sparcv8coprocessor
+    <br/>
+    Created: Jun 14, 2012
+    <br/>
+    Updated: Aug 30, 2012
+    <br/>
+    SVN:
+    <b>
+     No files checked in
+    </b>
+   </p>
+   <h2>
+    Other project properties
+   </h2>
+   <p>
+    Category:
+    
+     Processor
+    
+    <br/>
+    Language:
+    
+     Verilog
+    
+    <br/>
+    Development status:
+    
+     Planning
+    
+    <br/>
+    Additional info:
+    <br/>
+    WishBone Compliant: No
+    <br/>
+    License: LGPL
+   </p>
+   <div id="d_Description">
+    <h2>
+     
+     
+     Description
+    </h2>
+    <p id="p_Description">
+     The SPARC V8 instruction set has a well-defined opcode space and model for coprocessor instructions; this includes 25 bits of instruction space for data-processing instructions, as well as predefined instructions for loads/stores to/from coprocessor registers, and branch-on-coprocessor condition codes.  The goal of this project is to make a synthesizable SPARC V8 compatible core with a well-documented internal interface to a coprocessor.  The intention is to facilitate a close coupling of custom logic to the CPU core, while minimizing the redesign necessary in the CPU.
+     <br/>
+     First FPGA implementation will likely be on a Xilinx Zynq 7020, unless something with a more compelling $/gate ratio than the Zedboard comes out soon.  As such, initial implementations of the processor are likely to use the AXI bus as the system interface, as this is the interface to most of the hardwired components in the Zynq (memory controller, on-chip-SRAM, etc).  Once the core itself is ironed out, a Wishbone compatible variant will  be made.
+     <br/>
+     UPDATE:
+     <br/>
+     The high-level specifications are due to be completed mid-September.  Work on the HDL will commence shortly thereafter, but expect progress to be slow.
+    </p>
+   </div>
+  </div>
+  <div style="clear:both;margin-left:200px;">
+  </div>
+ </div>
+</div>
+</body>
+<p id='foot'>Database updated on 09 June 2015</p>

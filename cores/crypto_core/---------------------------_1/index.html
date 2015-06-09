@@ -1,0 +1,105 @@
+<head>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Go Back</a>
+<p align='right'><a href='basicrsa.tar.gz'>Source code</a></p>
+<body>
+<div class="main">
+ <div class="mid" id="dm">
+  <div class="content" id="dmc">
+   <h2>
+    Details
+   </h2>
+   <p>
+    Name: basicrsa
+    <br/>
+    Created: Oct 13, 2003
+    <br/>
+    Updated: Dec 20, 2009
+    <br/>
+    SVN Updated: Mar 10, 2009
+    
+    
+    
+    
+    
+    
+   </p>
+   <h2>
+    Other project properties
+   </h2>
+   <p>
+    Category:
+    
+     Crypto core
+    
+    <br/>
+    Language:
+    
+     VHDL
+    
+    <br/>
+    Development status:
+    
+     Stable
+    
+    <br/>
+    Additional info:
+    <br/>
+    WishBone Compliant: No
+    <br/>
+    License:
+   </p>
+   <div id="d_Description">
+    <h2>
+     
+     
+     Description
+    </h2>
+    <p id="p_Description">
+     This core is strictly an encryption/decription engine. No attempt has been made to incorporate key generation, and no plans exist to do so.
+     <br/>
+     The core accepts a 1024-bit exponent, a 1024-bit modulus, and a 1024-bit message. After about 1 million clock cycles, it returns the encrypted or decrypted message on the output bus. There is nothing pretty, fast, or efficient about its operation. It simply uses a brute force approach to perform the required modular exponentiation. Operation is described in more detail in comments in the source.
+     <br/>
+     BasicRSA was written in VHDL using Xilinx's ISE 5.2i. It has been tested using ModelSim XE for 32-bit data, but has not been verified for larger bus widths, nor has it been tested in actual hardware. This core is intended primarily as a learning vehicle for me, and any comments or suggestions to make it better will be appreciated.
+    </p>
+   </div>
+   <div id="d_Features">
+    <h2>
+     
+     
+     Features
+    </h2>
+    <p id="p_Features">
+     - It works for up to 1024-bit modulus (Tested at 32-bit modulus).
+     <br/>
+     - It fits in a Xilinx Virtex II XC2V8000.
+     <br/>
+     - Clock Rate at 32-bit modulus approximately 16MHz.
+     <br/>
+     - Clock Rate at 1024-bit modulus approximately 10MHz.
+     <br/>
+     - Cycles required to complete operation at n-bit modulus, slightly greater than n-squared clocks.
+    </p>
+   </div>
+   <div id="d_Status">
+    <h2>
+     
+     
+     Status
+    </h2>
+    <p id="p_Status">
+     - Long carry chains in adders and subtracters are the main reason for the low clock rates.
+     <br/>
+     - Experimentation has determined that carry lookahead adders automatically synthesized by ISE are about as good as it gets. Pipelining partial adders could improve throughput, but only at a tremendous cost in gate count.
+     <br/>
+     - Project status has been changed to "Stable" because no improvements have been discovered or suggested to the author.
+    </p>
+   </div>
+  </div>
+  <div style="clear:both;margin-left:200px;">
+  </div>
+ </div>
+</div>
+</body>
+<p id='foot'>Database updated on 09 June 2015</p>

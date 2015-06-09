@@ -1,0 +1,156 @@
+<head>
+<link rel="stylesheet" href="../../style.css" type="text/css">
+</head>
+<a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Go Back</a>
+<p align='right'><a href='No_svn_archive_link_available.tar.gz'>Source code</a></p>
+<body>
+<div class="main">
+ <div class="mid" id="dm">
+  <div class="content" id="dmc">
+   <h2>
+    Details
+   </h2>
+   <p>
+    Name: fir
+    <br/>
+    Created: Apr 12, 2012
+    <br/>
+    Updated: Sep  2, 2014
+    <br/>
+    SVN:
+    <b>
+     No files checked in
+    </b>
+   </p>
+   <h2>
+    Other project properties
+   </h2>
+   <p>
+    Category:
+    
+     DSP core
+    
+    <br/>
+    Language:
+    
+     VHDL
+    
+    <br/>
+    Development status:
+    
+     Stable
+    
+    <br/>
+    Additional info:
+    <br/>
+    WishBone Compliant: No
+    <br/>
+    License: GPL
+   </p>
+   <div id="d_Specifications">
+    <h2>
+     
+     
+     Specifications
+    </h2>
+    <p id="p_Specifications">
+     - as much as 256 TAPs in Xilinx Virtex/Spartan2 (per cascade unit)
+     <br/>
+     - low gate count (on expense of lower input sample frequency range) with a single MAC unit per core and sequential calculation of output samples (TAPs don't operate in parallel)
+     <br/>
+     - 2 to 256 TAPs range set by a user
+     <br/>
+     - 16 bit or less input sample width set by a user
+     <br/>
+     - 16 bit or less coefficient width set by a user
+     <br/>
+     - simple design that allows cascading several FIR filter cores (external adder required)
+    </p>
+   </div>
+   <div id="d_Description">
+    <h2>
+     
+     
+     Description
+    </h2>
+    <p id="p_Description">
+     FIR, or Finite Impulse Response, filters have the distinctive trait that their impulse response lasts for a finite duration of time as opposed to IIR, or Infinite Impulse Response, filters whose impulse response is infinite in duration.
+    </p>
+   </div>
+   <div id="d_IMAGE: typical_tap.gif">
+    <h2>
+     
+     
+     IMAGE: typical_tap.gif
+    </h2>
+    <p id="p_IMAGE: typical_tap.gif">
+     FILE: typical_tap.gif
+     <br/>
+     DESCRIPTION: Typical block diagram of a TAP unit in typical FIR filters
+     <br/>
+    </p>
+   </div>
+   <div id="d_">
+    <h2>
+     
+     
+    </h2>
+    <p id="p_">
+     Currently FIR filter core uses two dual-port memories for accessing input samples (first circular FIFO) and coefficients (second circular FIFO). It takes NUM_TAPS+1 to compute new output sample. Supported DP memory is of Xilinx Virtex/Spartan2 FPGAs. Also a generic DP memory is provided (it synthesizes into flip-flops).
+     <br/>
+    </p>
+   </div>
+   <div id="d_IMAGE: fir_block.gif">
+    <h2>
+     
+     
+     IMAGE: fir_block.gif
+    </h2>
+    <p id="p_IMAGE: fir_block.gif">
+     FILE: fir_block.gif
+     <br/>
+     DESCRIPTION: Block diagram of our "sequential" FIR filter core
+     <br/>
+    </p>
+   </div>
+   <div id="d_Synthesis">
+    <h2>
+     
+     
+     Synthesis
+    </h2>
+    <p id="p_Synthesis">
+     - Synthesized with Xilinx Foundation 2.1i (Synopsys Express FPGA compiler, Xilinx P&amp;R tools) for Xilinx Virtex -6 FPGA design takes 229 Virtex slices and 2 BlockRAMs and operates at 55MHz (12 TAPs, 16 bit coefficients and input samples, +-2.29 input sample frequency).
+    </p>
+   </div>
+   <div id="d_Status">
+    <h2>
+     
+     
+     Status
+    </h2>
+    <p id="p_Status">
+     - design is available in VHDL from OpenCores CVS (see Downloads)
+     <br/>
+     - documentation will be written if enough interest (or if there will be a volunteer to do this)
+     <br/>
+     - also see TO DO list in design's VHDL sources
+    </p>
+   </div>
+   <div id="d_Description">
+    <h2>
+     
+     
+     Description
+    </h2>
+    <p id="p_Description">
+     Please write a description of the project here. It is used as a MetaTag (search engines looks at this).
+    </p>
+   </div>
+  </div>
+  <div style="clear:both;margin-left:200px;">
+  </div>
+ </div>
+</div>
+</body>
+<p id='foot'>Database updated on 09 June 2015</p>
