@@ -96,7 +96,7 @@ $(function() {
       $("body").removeClass("modal-open");
     }
   });
-  $(".modal-fade-screen, .modal-close").on("click", function() {
+  $(".modal-fade-screen, .modal-close, .soon-close").on("click", function() {
     $(".modal-state:checked").prop("checked", false).change();
   });
   $(".modal-inner").on("click", function(e) {

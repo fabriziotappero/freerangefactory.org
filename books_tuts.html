@@ -31,10 +31,10 @@ layout: default
       </div>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
-        
+
         {% if page.categories contains 'donation' %}
           <div class="modal">
-            <label for="modal-1"><a class="modal-trigger">Get PDF</a></label>
+            <label for="modal-1"><a class="modal-trigger">Download PDF</a></label>
             <input class="modal-state" id="modal-1" type="checkbox"/>
             <div class="modal-fade-screen">
               <div class="modal-inner">
@@ -44,10 +44,10 @@ layout: default
                 <p class="modal-content">We strive for quality. An uncountable amount of hours was invested in
                 the creation of this material. We made it free because that is what we want.
                 We would love your support to get even further.</p>
-                
-                <span><a href="{{ page.pdf_link }}">Get PDF</a></span>
-    
-                <span id="PayPalMiniCart">
+
+                <a href="{{ page.pdf_link }}"><button>Download PDF</button></a>
+
+                <span id="PayPalMiniCart" class="soon-close">
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="add" value="1" />
@@ -59,7 +59,7 @@ layout: default
                     <input type="hidden" name="currency_code" value="EUR" />
                     <input type="hidden" name="weight_g" value="0">
                     <input type='hidden' name="image_url" value="{{ site.url/img/icons/logo-frf.png }}"/>
-                    <input type="submit" name="submit" value="Donate" />
+                    <input type="submit" name="submit" value="Donate 5€" />
                   </form>
                 </span>
 
@@ -67,7 +67,7 @@ layout: default
             </div>
           </div>
         {% else %}
-          <a href="{{ page.pdf_link }}">Get PDF</a>
+         <label for=""><a href="{{ page.pdf_link }}">Download PDF</a></label>
         {% endif %}
 
       </div>
