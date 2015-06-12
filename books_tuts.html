@@ -12,23 +12,6 @@ layout: default
     {% if page.categories contains 'book' %}
     <div class="ShopItem">
       <hr/>
-      <div class="ShopItem-info">
-        <h4>{{ page.item-name }}</h4>
-        <ul class="accordion-tabs">
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link is-active">Description</a>
-            <div class="tab-content">
-              <p>{{ page.description | markdownify }}</p>
-            </div>
-          </li>
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link">Specifications</a>
-            <div class="tab-content">
-              {{ page.specifications | markdownify }}
-            </div>
-          </li>
-        </ul>
-      </div>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
 
@@ -70,6 +53,23 @@ layout: default
          <label for=""><a href="{{ page.pdf_link }}">Download PDF</a></label>
         {% endif %}
 
+      </div>
+      <div class="ShopItem-info">
+        <h4>{{ page.item-name }}</h4>
+        <ul class="accordion-tabs">
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link is-active">Description</a>
+            <div class="tab-content">
+              <p>{{ page.description | markdownify }}</p>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link">Specifications</a>
+            <div class="tab-content">
+              {{ page.specifications | markdownify }}
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     {% endif %}
