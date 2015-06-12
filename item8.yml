@@ -1,0 +1,30 @@
+---
+categories: free-pdf, book
+item-name: The Scientist and Engineer's Guide to Digital Signal Processing.
+img: img/dsp_guide_cover.png
+item-ref: dsp_guide_cover_book
+price_euros: 0.00
+weight_g: 0.0
+min_quantity: 1
+button_txt: Free PDF
+pdf_link: http://www.dspguide.com/pdfbook.htm
+status: not available
+description: |
+  The Scientist and Engineer's Guide to Digital Signal Processing, by
+  Steven W. Smith, is a practical introduction to digital signal processing.
+  Covering a wide range of topics, this book is an ideal text for those
+  interested in signal processing and an excellent reference for more
+  experienced users. The 620 pages of the electronic version of this book are
+  available free of charge.
+
+specifications: |
+  + **Book Title:** The Scientist and Engineer's Guide to Digital Signal Processing.
+
+  + **Authors:** Steven W. Smith.
+
+  + **License:** http://www.dspguide.com/copyrite.htm
+
+  + **Last update:** -.
+
+  + **Additional Info:** Free PDF available for download.
+---

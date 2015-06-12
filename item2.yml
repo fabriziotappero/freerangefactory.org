@@ -1,0 +1,43 @@
+---
+categories: selling, electronics, dev_board, fpga
+item-name: XuLA FPGA Board
+img: img/xula1.png
+item-ref: xula1_board
+price_euros: 71.00
+weight_g: 10.0
+min_quantity: 1
+button_txt: BUY NOW
+button_link:
+status: available
+description: |
+  The XuLA is an exceptional entry-level FPGA experimental board that packs a
+  [Xilinx Spartan 3A](http://www.xilinx.com/support/documentation/data_sheets/ds529.pdf){:target="_blank"}
+  200,000 gate FPGA, 8 MByte SDRAM, 2 Mbit flash, two voltage regulators and a
+  supervisory Microchip microcontroller into a 51mmX25mm footprint.
+
+  The XuLA board is made to be **affordable** and **open**, allowing you to write
+  and synthesize yout VHDL code with no proprietary limitations o any kind.
+
+  On the [XuLA Github repository](https://github.com/xesscorp/XuLA){:target="_blank"} you can
+  find the XuLA board reference manual, getting started guide, board schematics,
+  PCB Layout (Cadsoft Eagle) and more. All the material that you can possibly
+  want is all source code.
+
+  If you are interested in something more powerfull but still open, have a look
+  at XuLA 2 board. It is a XuLA with steroids; based on a Xilinx Spartan 6 FPGA.
+  XuLA 2 board is available as well on this website.
+
+specifications: |
+  + **FPGA:** Xilinx XC3S200A Spartan 3A FPGA, (4k Logic Cells).
+  + **On-board Memory:** 64 Mbit SDRAM, 2 Mbit flash for FPGA firmware storage.
+  + **External Pins:** 40-pin external interface (250 mil connector).
+  + **Clock:** Local 12 MHz oscillator.
+  + **Micro:** Microchip PIC 18F14K50 for FPGA programming.
+  + **Communications:** USB 2.0 communication port, JTAG port.
+  + **Documentation:** User manual, board schematics, PCB Layout (Cadsoft Eagle)
+    is all open source and available for download from the
+    [XuLA Github repository](https://github.com/xesscorp/XuLA){:target="_blank"}.
+  + **Note:** Programmable with XILINX ISE (Windows and Linux) and with the
+    open-source software XSTOOLS. Works with XILINX iMPACT and ChipScope
+    via the Xilinx JTAG adapter.
+---

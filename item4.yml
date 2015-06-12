@@ -1,0 +1,28 @@
+---
+categories: free-pdf, book
+item-name: XuLA 2 Reference Manual
+img: img/xula2_reference_manual_cover.png
+item-ref: xula2_ref_manual
+price_euros: 0.00
+weight_g: 150.0
+min_quantity: 1
+button_txt: Free PDF
+pdf_link: pdf/xula2_reference_manual.pdf
+status: not available
+description: |
+  No electronics hardware can be really exceptional without a proper Reference
+  Manual that allows you to use it.
+
+  This is the XuLA 2 Reference Manual.
+
+specifications: |
+  + **Book Title:** XuLA2 Reference Manual.
+
+  + **Authors:** Dave Vandenbour.
+
+  + **License:** Creative Commons Attribution-ShareAlike Unported License.
+
+  + **Last update:** 2015.
+
+  + **Additional Info:** Free PDF and libreoffice files available for download.
+---
