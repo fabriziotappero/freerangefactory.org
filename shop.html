@@ -26,23 +26,7 @@ layout: default
     {% if page.categories contains 'selling' %}
     <div class="ShopItem">
       <hr/>
-      <div class="ShopItem-info">
-        <h4>{{ page.item-name }}</h4>
-        <ul class="accordion-tabs">
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link is-active">Description</a>
-            <div class="tab-content">
-              <p>{{ page.description | markdownify }}</p>
-            </div>
-          </li>
-          <li class="tab-header-and-content">
-            <a href="" class="tab-link">Specifications</a>
-            <div class="tab-content">
-              {{ page.specifications | markdownify }}
-            </div>
-          </li>
-        </ul>
-      </div>
+      <h4>{{ page.item-name }}</h4>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
         <span class="price">{{ page.price_euros }} &#8364;</span>
@@ -63,6 +47,23 @@ layout: default
           </form>
         </span>
 
+      </div>
+      
+      <div class="ShopItem-info">
+        <ul class="accordion-tabs">
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link is-active">Description</a>
+            <div class="tab-content">
+              <p>{{ page.description | markdownify }}</p>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="" class="tab-link">Specifications</a>
+            <div class="tab-content">
+              {{ page.specifications | markdownify }}
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     {% endif %}
