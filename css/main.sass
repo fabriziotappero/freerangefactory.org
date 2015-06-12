@@ -250,11 +250,16 @@ h1,h2,h3,h4,h5
     .ShopItem-info
       @include span-columns(8)
       text-align: justify
+      @include media($mobile)
+        @include span-columns(12)
+
 
     .ShopItem-img
       @include span-columns(4)
       max-width: 250px
-      margin: 4em 0 0 0
+      margin: 0 0 0 0
+      @include media($mobile)
+        @include span-columns(12)
 
       .price
         font-weight: bold
