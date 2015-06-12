@@ -12,6 +12,7 @@ layout: default
     {% if page.categories contains 'book' %}
     <div class="ShopItem">
       <hr/>
+      <h4>{{ page.item-name }}</h4>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
 
@@ -55,7 +56,6 @@ layout: default
 
       </div>
       <div class="ShopItem-info">
-        <h4>{{ page.item-name }}</h4>
         <ul class="accordion-tabs">
           <li class="tab-header-and-content">
             <a href="" class="tab-link is-active">Description</a>
