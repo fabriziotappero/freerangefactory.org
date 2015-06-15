@@ -104,16 +104,3 @@ $(function() {
   });
 });
 
-// move cart icon while scrolling
-$(window).scroll(function(){
-  var t=$(window).scrollTop();
-    if (t<40){
-      $("#PayPalMiniCart_ViewCart")
-        .animate({"margin-top": (0) + "px"}, 600 );
-        console.log("bingo")
-    }
-    if (t>41){
-      $("#PayPalMiniCart_ViewCart")
-             .animate({"margin-top": (0) + "px"}, 600 );
-    }
-});
