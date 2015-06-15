@@ -56,10 +56,11 @@ h1,h2,h3,h4,h5
         +size(100px 37px)
 
   .links
+    cursor: pointer
     float: right
     display: inline
     text-transform: uppercase
-    margin: 0.4em 0.5em 1em 0
+    margin: 0.4em 0.5em 0 0
 
     a
       margin-left: 10px
@@ -68,6 +69,10 @@ h1,h2,h3,h4,h5
 
       &:hover
         color: rgba( $base-color, .7 )
+
+      svg:hover
+        path
+          fill: rgba( $base-color, .7 )
 
     a.red
       background-color: red
@@ -84,7 +89,6 @@ h1,h2,h3,h4,h5
   button
     font-weight: normal
     //padding: 0.7em 0.2em
-
 
 .landingPage
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))

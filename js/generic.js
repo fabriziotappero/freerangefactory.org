@@ -104,3 +104,13 @@ $(function() {
   });
 });
 
+// make top page links always visible when you are on a shop page
+$(document).ready(function() {
+  if( $('#PayPalMiniCart').length ){
+    $(".links").css({"position":"absolute","right":"0px"});
+
+    $(window).scroll(function() {
+      $(".links").css("top", $(window).scrollTop() + "px");
+    });
+  }
+});
