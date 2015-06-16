@@ -107,29 +107,31 @@ $(function() {
 // make top page links always visible when you are on a shop page
 // this function is optimized for speed
 
-var justExecuted = false;
-$(window).scroll(function() {
-  if(justExecuted) {
-    return;
-  }
+//var justExecuted = false;
+//$(window).scroll(function() {
+//  if(justExecuted) {
+//    return;
+//  }
   // your event handling logic here
   //$(".links").css("top", $(window).scrollTop() + "px");
- $(".links").animate({
-   var disp = $(window).scrollTop();
-    "top": disp + "px"
-  }, 300, function() {
-  });
+// $(".links").animate({
+//   var disp = $(window).scrollTop();
+ //   "top": disp + "px"
+//  }, 300, function() {
+//  });
 
-  justExecuted = true;
-  setTimeout(function() {
-    justExecuted = false;
-  }, 5);
-});
+//  justExecuted = true;
+//  setTimeout(function() {
+//    justExecuted = false;
+//  }, 5);
+//});
 
 $(document).ready(function() {
   if( $('#PayPalMiniCart').length ){
     $(".links").css({"position":"absolute","right":"0px"});
 
+    $(".links").animate({"top": $(window).scrollTop() + "px"}, 300, function() {});
+    
     //$(window).scroll(function() {
     //  $(".links").css("top", $(window).scrollTop() + "px");
     //});
