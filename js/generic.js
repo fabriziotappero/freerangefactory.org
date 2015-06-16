@@ -113,7 +113,11 @@ $(window).scroll(function() {
     return;
   }
   // your event handling logic here
-  $(".links").css("top", $(window).scrollTop() + "px");
+  //$(".links").css("top", $(window).scrollTop() + "px");
+ $(".links").animate({
+    "top": $(window).scrollTop() + "px"
+  }, 1000, function() {
+  });
 
   justExecuted = true;
   setTimeout(function() {
