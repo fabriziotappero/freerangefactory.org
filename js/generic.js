@@ -119,7 +119,7 @@ $(document).ready(function() {
             top: scrollTop < originalY
                     ? 0
                     : scrollTop - originalY + 5
-        }, 300,function(){element.show(3000);});
+        }, 300,function(){element.slideDown(5000,"swing");});
     });
   }
 });
