@@ -117,7 +117,7 @@ $(window).scroll(function() {
  $(".links").animate({
    var disp = $(window).scrollTop();
     "top": disp + "px"
-  }, 300-disp, function() {
+  }, 300, function() {
   });
 
   justExecuted = true;
