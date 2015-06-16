@@ -131,7 +131,7 @@ $(document).ready(function() {
     $(".links").css({"position":"absolute","right":"0px"});
     $(window).scroll(function() {
       //$(".links").css("top", $(window).scrollTop() + "px");
-      $(".links").animate({"top": $(window).scrollTop() + "px"}, 300, function() {});
+      $(".links").animate({"top": $(window).scrollTop() + "px"}, 30, function() {});
     });
   }
 });
