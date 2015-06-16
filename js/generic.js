@@ -110,28 +110,20 @@ $(document).ready(function() {
   if( $('#PayPalMiniCart').length ){
     var element = $('.links'),
     originalY = element.offset().top;
-    var topMargin = 5;
     element.css('position', 'relative');
     
     $(window).on('scroll', function(event) {
         var scrollTop = $(window).scrollTop();
-        
+        element.hide();
         element.stop(false, false).animate({
             top: scrollTop < originalY
                     ? 0
-                    : scrollTop - originalY + topMargin
-        }, 300);
+                    : scrollTop - originalY + 5
+        }, 300,function(){element.show();});
     });
-    
   }
 });
 
-//$(document).ready(function() {
-//  if( $('#PayPalMiniCart').length ){
-//    $(".links").css({"position":"absolute","right":"0px"});
-//   $(window).scroll(function() {
-//      //$(".links").css("top", $(window).scrollTop() + "px");
-//      $(".links").animate({"top": $(window).scrollTop() + "px"}, 3, function() {});
-//    });
-//  }
-//});
+
+
+  
