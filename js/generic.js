@@ -115,8 +115,9 @@ $(window).scroll(function() {
   // your event handling logic here
   //$(".links").css("top", $(window).scrollTop() + "px");
  $(".links").animate({
-    "top": $(window).scrollTop() + "px"
-  }, 300, function() {
+   var disp = $(window).scrollTop();
+    "top": disp + "px"
+  }, 300-disp, function() {
   });
 
   justExecuted = true;
