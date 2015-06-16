@@ -116,13 +116,13 @@ $(window).scroll(function() {
   //$(".links").css("top", $(window).scrollTop() + "px");
  $(".links").animate({
     "top": $(window).scrollTop() + "px"
-  }, 100, function() {
+  }, 10, function() {
   });
 
   justExecuted = true;
   setTimeout(function() {
     justExecuted = false;
-  }, 50);
+  }, 5);
 });
 
 $(document).ready(function() {
