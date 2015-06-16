@@ -116,7 +116,7 @@ $(window).scroll(function() {
   //$(".links").css("top", $(window).scrollTop() + "px");
  $(".links").animate({
     "top": $(window).scrollTop() + "px"
-  }, 10, function() {
+  }, 300, function() {
   });
 
   justExecuted = true;
