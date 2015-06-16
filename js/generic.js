@@ -110,7 +110,7 @@ $(document).ready(function() {
   if( $('#PayPalMiniCart').length ){
     var element = $('.links'),
     originalY = element.offset().top;
-    var topMargin = 0;
+    var topMargin = 5;
     element.css('position', 'relative');
     
     $(window).on('scroll', function(event) {
