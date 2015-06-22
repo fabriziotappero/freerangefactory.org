@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="../../style.css" type="text/css">
 </head>
 <a href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Go Back</a>
-<p align='right'><a href='cascaded_fir_filter.tar.gz'>Source code</a></p>
+<p align='right'><a href='https://github.com/fabriziotappero/ip-cores/tree/dsp_core_cascaded_fir_filter'>Source code</a></p>
 <body>
 <div class="main">
  <div class="mid" id="dm">
@@ -15,7 +15,7 @@
     <br/>
     Created: May 21, 2015
     <br/>
-    Updated: May 22, 2015
+    Updated: Jun 16, 2015
     <br/>
     SVN Updated: May 25, 2015
     
@@ -74,10 +74,112 @@
      * load coefficient from input data as option - for echo/sonar/radar/etc processing
     </p>
    </div>
+   <div id="d_FPGA resources using">
+    <h2>
+     
+     
+     FPGA resources using
+    </h2>
+    <p id="p_FPGA resources using">
+    </p>
+    <p>
+     Altera Cyclone IV E EP4CE22E22C8
+    </p>
+    <p>
+     Parameters of filter
+     <table border="1">
+      <tr>
+       <td>
+        Input data width
+       </td>
+       <td>
+        14 b, 2 channels
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Pulse response length
+       </td>
+       <td>
+        2048 samples
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Cell size
+       </td>
+       <td>
+        1024 (2 cells for 2048 samples used)
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Output data width
+       </td>
+       <td>
+        28 b, 2 channels
+       </td>
+      </tr>
+     </table>
+    </p>
+    <p>
+     Resources usage
+     <table border="1">
+      <tr>
+       <td>
+        Total logic elements
+       </td>
+       <td>
+        840
+       </td>
+      </tr>
+      <tr>
+       <td>
+        - Total combinational functions
+       </td>
+       <td>
+        558
+       </td>
+      </tr>
+      <tr>
+       <td>
+        - Dedicated logic registers
+       </td>
+       <td>
+        537
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Total registers
+       </td>
+       <td>
+        537
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Total memory bits
+       </td>
+       <td>
+        114,688
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Embedded Multiplier 9-bit elements
+       </td>
+       <td>
+        20
+       </td>
+      </tr>
+     </table>
+    </p>
+   </div>
   </div>
   <div style="clear:both;margin-left:200px;">
   </div>
  </div>
 </div>
 </body>
-<p id='foot'>Database updated on 10 June 2015</p>
+<p id='foot'>Database updated on 22 June 2015</p>
