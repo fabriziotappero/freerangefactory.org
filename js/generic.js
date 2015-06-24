@@ -111,7 +111,7 @@ $(document).ready(function() {
     var element = $('.links'),
     originalY = element.offset().top;
     element.css('position', 'relative');
-    
+
     $(window).on('scroll', function(event) {
         var scrollTop = $(window).scrollTop();
         element.hide();
@@ -123,7 +123,3 @@ $(document).ready(function() {
     });
   }
 });
-
-
-
-  
