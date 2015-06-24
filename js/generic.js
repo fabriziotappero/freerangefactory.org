@@ -115,11 +115,17 @@ $(document).ready(function() {
     $(window).on('scroll', function(event) {
         var scrollTop = $(window).scrollTop();
         element.hide();
+        if (scrollTop<50){
+          element.css('top','0px');
+          element.show();
+          }
+
+
         element.stop(false, false).animate({
             top: scrollTop < originalY
                     ? 0
                     : scrollTop - originalY + 5
-        }, 5000,function(){element.slideDown(500,"swing");});
+        }, 3000,function(){element.slideDown(200,"swing");});
     });
   }
 });
