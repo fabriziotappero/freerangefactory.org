@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     /* ################################################################### */
     var business_name = "f.tappero@gmail.com",
-        shipping_fee_base = 12.00,
+        shipping_fee_base = 13.00,
         shipping_fee_per_kg = 6.50,
         shipping_txt = "Shipping and Handling",
         shipping_subtxt = "International Registered Mail",
