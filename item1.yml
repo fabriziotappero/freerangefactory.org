@@ -3,8 +3,8 @@ categories: selling, electronics, dev_board, fpga
 item-name: XuLA 2 FPGA Board
 img: img/xula2.png
 item-ref: xula2_board
-price_euros: 133.00
-weight_g: 10.0
+price_euros: 126.00
+weight_g: 15.0
 min_quantity: 1
 button_txt: BUY NOW
 button_link:
@@ -12,7 +12,7 @@ status: available
 description: |
   The XuLA 2 board is an innovative open-source FPGA-based experimental board that
   packs a
-  [Xilinx Spartan 6](http://www.xilinx.com/support/documentation/data_sheets/ds160.pdf){:target="_blank"}
+  [Xilinx Spartan 6 LX25](http://www.xilinx.com/support/documentation/data_sheets/ds160.pdf){:target="_blank"}
   FPGA, 256 Mbit SDRAM, 8 Mbit flash, two voltage regulators, a supervisory Microchip
   [18F14K50](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en533924)
   PIC and a MicroSD card slot into a 51mm x 25mm footprint.
