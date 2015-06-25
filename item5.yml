@@ -3,7 +3,7 @@ categories: selling, electronics, generic
 item-name: 4.5-28V, 3A Voltage Regulator
 img: img/dcdc_converter.png
 item-ref: dcdc_converter 1
-price_euros: 3.00
+price_euros: 3.50
 weight_g: 5.0
 min_quantity: 3
 button_txt: BUY NOW
@@ -42,5 +42,5 @@ specifications: |
   + **Output Voltage Ripple:** <30mV.
   + **Efficiency:** up to 93%.
   + **Operating Temperature:** -40 to +85 deg C.
-  + **Note:** None.
+  + **Note:** This module is sold in a pack of three units.
 ---
