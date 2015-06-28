@@ -208,13 +208,16 @@ h1,h2,h3,h4,h5
 
 // foter style
 .footer
+  @include outer-container
+  max-width: 100%
   font-size: 0.8em
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))
   height: 100px
-  margin: 0
+  //margin: 0
   color: white
   p
     margin: 1em 0 0 1em
+
 
 // ip cores
 @import "ip_cores"
