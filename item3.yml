@@ -20,7 +20,8 @@ description: |
   not directly applicable to the subjects at hand.
 
   This book was written with the intention of being **freely available to
-  everybody**. To support our work, a paperback version can be purchased from
+  everybody** ([PDF](pdf/free_range_vhdl.pdf){:target="_blank"}).
+  To support our work, a paperback version can be purchased from
   our on-line store. Alternatively, please consider a donation.
 
   VHDL is an extremely powerful tool. The more you understand as you work and
@@ -36,6 +37,6 @@ specifications: |
   + **Authors:** Bryan Mealy, Fabrizio Tappero.
   + **License:** Creative Commons Attribution-ShareAlike Unported License.
   + **Last update:** 2015.
-  + **Additional Info:** The PDF and the TEX files of the book are available from our
+  + **Additional Info:** The TEX files of the book are available from our
       [Github repository](http://github.com/fabriziotappero/Free-Range-VHDL-book){:target="_blank"}.
 ---
