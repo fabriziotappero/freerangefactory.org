@@ -26,7 +26,7 @@ layout: default
     {% if page.categories contains 'selling' %}
     <div class="ShopItem">
       <hr/>
-      <h4>{{ page.item-name }}</h4>
+      <h4 id="{{ page.item-link }}">{{ page.item-name }}</h4>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
         <span class="price">{{ page.price_euros }} &#8364;</span>

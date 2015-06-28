@@ -12,7 +12,7 @@ layout: default
     {% if page.categories contains 'book' %}
     <div class="ShopItem">
       <hr/>
-      <h4>{{ page.item-name }}</h4>
+      <h4  id="{{ page.item-link }}">{{ page.item-name }}</h4>
       <div class="ShopItem-img">
         <img src="{{ page.img }}" alt="shopItem-img">
 
@@ -30,6 +30,7 @@ layout: default
                 We would love your support to get even further.</p>
 
                 <a href="{{ page.pdf_link }}"><button>Download PDF</button></a>
+                <a href="{{ site.url }}/shop.html#FreeRangeVHDL-Book"><button>Buy the Book</button></a>
 
                 <span id="PayPalMiniCart" class="soon-close">
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
