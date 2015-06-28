@@ -208,15 +208,22 @@ h1,h2,h3,h4,h5
 
 // foter style
 .footer
-  @include outer-container
   max-width: 100%
-  font-size: 0.8em
+  font-size: 0.9em
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))
   height: 100px
-  //margin: 0
   color: white
+  z-index: 50
   p
     margin: 1em 0 0 1em
+  .footer_links
+    text-align: right
+
+  svg
+    margin: 1em 1em 0 0
+    +size(50px 50px)
+
+
 
 
 // ip cores
@@ -376,6 +383,11 @@ h1,h2,h3,h4,h5
   svg
     path
       fill: #3780F0
+
+.white
+  svg
+    path
+      fill: white
 
 hr
   color: $line-color
