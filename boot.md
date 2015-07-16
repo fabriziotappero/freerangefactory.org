@@ -34,13 +34,18 @@ sudo boot_lin_installer.bin
 To uninstall boot you can use the command:
 
 ```bash
-sudo rm -Rf /opt/boot /usr/local/bin/boot /usr/share/applications/boot.desktop /usr/share/pixmaps/boot-icon.*
+sudo rm -Rf /opt/boot /usr/local/bin/boot
+sudo rm -Rf /usr/share/applications/boot.desktop
+sudo rm -Rf /usr/share/pixmaps/boot-icon.*
 ```
 
 Older versions of boot (before ver. 0.36) can be removed via the command:
 
 ```bash
-sudo rm -Rf /usr/local/lib/python2.7/dist-packages/boot* /usr/local/bin/boot /usr/share/applications/boot.desktop /usr/share/pixmaps/boot-icon.*
+sudo rm -Rf /usr/local/lib/python2.7/dist-packages/boot*
+sudo rm -Rf /usr/local/bin/boot
+sudo rm -Rf /usr/share/applications/boot.desktop
+sudo rm -Rf /usr/share/pixmaps/boot-icon.*
 ```
 
 Once you have installed boot you need to take care of its dependencies and for this you need to be connected to the Internet and run the terminal command:
