@@ -11,6 +11,10 @@ boot is easy to use and runs on any Linux distribution. Documentation is availab
 
 Intall *ghld* and *gtkwave* using the following commands:
 
+```bash
+cd ~
+```
+
 sudo add-apt-repository ppa:pgavin/ghdl
 sudo apt-get update
 
