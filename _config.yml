@@ -13,6 +13,7 @@ url: "http://freerangefactory.org"
 
 # Build settings
 markdown: redcarpet
+highlighter: pygments
 
 # Sass
 sass:
