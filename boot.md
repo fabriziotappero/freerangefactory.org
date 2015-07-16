@@ -7,15 +7,15 @@ boot is an open-source software tool based on the open-source tools *ghld* and *
 
 boot is easy to use and runs on any Linux distribution. Documentation is available here. 
 
-## Download and Install boot
+### Download and Install boot
 
-boot runs on most Linux distributions and it can be easily installed from its (generic Linux .bin installer)[http://whub21.webhostinghub.com/~vincen17/freerangefactory.org/dl/]
+boot runs on most Linux distributions and it can be easily installed from its [generic Linux .bin installer](http://whub21.webhostinghub.com/~vincen17/freerangefactory.org/dl/)
 
 Once downloaded the .zip file, you can got ahead and unzip plus install it with the following commands:
 
-  unzip boot_lin_installer.zip
+    unzip boot_lin_installer.zip
 
-  sudo boot_lin_installer.bin
+    sudo boot_lin_installer.bin
 
 To uninstall boot you can use the command:
 
