@@ -3,9 +3,20 @@ layout: default
 ---
 ## BOOT Software Tool
 
-boot is an open-source software tool based on the open-source tools *ghld* and *tkwave* and designed to compile, simulate and synthesize your VHDL code. boot leverages the opencores.org website to allow users to freely share IP Cores.
+boot is an open-source software tool based on the open-source tools **ghld** and **gtkwave** and designed to compile, simulate and synthesize your VHDL code. boot leverages the opencores.org website to allow users to freely share IP Cores.
 
 boot is easy to use and runs on any Linux distribution. Documentation is available here. 
+
+### Install GHDL and Gtkwave
+
+Intall *ghld* and *gtkwave* using the following commands:
+
+sudo add-apt-repository ppa:pgavin/ghdl
+sudo apt-get update
+
+sudo apt-get install ghdl gtkwave
+
+or directly using the ghdl .deb installer and the gtkwave .deb installer.
 
 ### Download and Install boot
 
