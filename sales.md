@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## What is your shipping fee?
+### What is your shipping fee?
 Free Range Factory shipping rate depends on the amount of material you order. As soon as you check out
 (and before you enter your personal data) you can see the shipping fee. Please contact us for any special condition you might have in mind. As a general indication have a look at here.
 
