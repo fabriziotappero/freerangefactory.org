@@ -7,11 +7,11 @@ Free Range Factory shipping cost depends on the amount of material you order. wh
 you can actually see what you will pay for shipping. Please contact us for any special condition you 
 might have in mind.
 
-#### Do you ship to international locations?
+##### Do you ship to international locations?
 **We do ship worldwide**. Prices are expressed in Euros but over the PayPal website you can easily convert 
 them in any other currency you like.
 
-#### How do I buy from Free Range Factory?
+##### How do I buy from Free Range Factory?
 You can place your order via the Free Range Factory website and you can pay using a PayPal account or any
 major credit card. Any sensitive information related to your payment will be directly handled by the secure 
 PayPal website. Free Range Factory does not store any credit card information or any PayPal information.
