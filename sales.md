@@ -2,12 +2,14 @@
 layout: default
 ---
 
-#### What is your shipping fee?
-Free Range Factory shipping rate depends on the amount of material you order. As soon as you check out
-(and before you enter your personal data) you can see the shipping fee. Please contact us for any special condition you might have in mind. As a general indication have a look at here.
+##### What is your shipping fee?
+Free Range Factory shipping cost depends on the amount of material you order. while you make your order 
+you can actually see what you will pay for shipping. Please contact us for any special condition you 
+might have in mind.
 
 #### Do you ship to international locations?
-We do ship worldwide. Prices are expressed in euros but you can easily convert them in any other currency.
+**We do ship worldwide**. Prices are expressed in Euros but over the PayPal website you can easily convert 
+them in any other currency you like.
 
 #### How do I buy from Free Range Factory?
 You can place your order via the Free Range Factory website and you can pay using a PayPal account or any
@@ -20,16 +22,16 @@ VISA, VISA Electron, MasterCard, American Express, Maestro, Debit Cards, eCheck 
 
 If you think this is not enough please do not hesitate to contact us.
 
+#### Do you have a secured server that can safely handle my credit card information?
+
+Any information related to your payment is directly handled by secure PayPal servers. No data related to 
+your credit card or your PayPal account transits or is stored on Free Range Factory servers.
+
 #### How long will it take for my order to reach me
 
 Your order will ship worldwide **from Europe** and the delivery time depends on the final destination. 
 Any time between 2 days and 3 weeks is to be considered standard. Generally, if you are located in Europe 
 you will get your package within few days. Orders to USA normally take few weeks.
-
-#### Do you have a secured server that can safely handle my credit card information?
-
-Any information related to your payment is directly handled by secure PayPal servers. No data related to 
-your credit card or your PayPal account transits or is stored on Free Range Factory servers.
 
 #### Do you sell your products through distributors?
 
