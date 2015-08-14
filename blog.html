@@ -7,7 +7,7 @@ layout: default
     <article class="post">
 
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="date">{{ post.date | date: "%e %B %Y" }}</div>
+      <div class="date-author">Posted: {{ post.date | date: "%e %B %Y" }} by {{site.author}} </div>
 
       <div class="entry">
         {{ post.excerpt }}
