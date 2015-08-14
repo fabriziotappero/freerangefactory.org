@@ -1,6 +1,6 @@
 ---
-layout: simple
-title: Programming with ARM
+layout: default
+title: Programming with ARM first post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
