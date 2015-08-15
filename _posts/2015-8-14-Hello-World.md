@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: test
 title: Programming with ARM
 ---
 
