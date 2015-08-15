@@ -9,8 +9,8 @@ rel-publisher: "https://freerangefactory.org"
 baseurl: "/" # change it if your site goes inside a subfolder.
              # For example: baseurl: "/site/"
 
-url: "http://freerangefactory.org"
-#url: "http://127.0.0.1:4000"
+#url: "http://freerangefactory.org"
+url: "http://127.0.0.1:4000"
 
 # Build settings
 markdown: redcarpet

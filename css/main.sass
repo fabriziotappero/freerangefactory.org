@@ -10,7 +10,7 @@
 @import "base/base"
 
 // TODO: fix image path
-$landingPageImg: '../img/icons/logo_patent_camera.png'
+$landingPageImg: '../img/logo_patent_camera.png'
 $base-spacing: 1.5em !default
 $base-color: #2989d8
 $base-color2:#1E589A
@@ -38,11 +38,13 @@ body
       font-size: 0.93em
       line-height: 0.95em * 1.4
 
-h1,h2,h3,h4,h5
-  text-align: center
-  text-transform: uppercase
-  color: $base-color
-  margin: 1.5em auto 1em auto
+  h1,h2,h3,h4,h5
+    color: $base-color
+    margin: 1.5em auto 1em auto
+
+  .global_page_wrap
+    h1,h2,h3,h4,h5
+      text-align: center
 
 
 [class^="icon-"]
@@ -94,7 +96,6 @@ h1,h2,h3,h4,h5
 
   button
     font-weight: normal
-    //margin: 5px
 
 .landingPage
   @include linear-gradient(rgba($base-color2, 0.8), rgba($base-color2, 0.8))
@@ -410,23 +411,25 @@ hr
 #PayPalMiniCart
   form
     display: inline
-    
+
+.posts
+  margin: 3em 0.6em
+  .post-preview
+    margin-top: 5em
+  .post-preview-title
+    font-size: 1.5em
+  .post-preview-meta
+    font-style: italic
+    opacity: 0.6
 .post
-  margin: 0.6em
-  h1,h2,h3,h4,h5
-    text-align: left
-  .date-author
-    font-weight: bold
-
-
-//#PayPalMiniCart_ViewCart
-//  right: 5px
-//  top: 40px
-//  position: fixed
-//  cursor: pointer
-
-//  svg
-//    +size(28px 28px)
-//    margin: 0
-//    path
-//      fill: $base-color
+  margin: 4em 0.6em
+  .title
+    text-align: center
+    color: $base-color
+    margin: 1.5em auto 1em auto
+  .meta
+    text-align: center
+    font-style: italic
+    opacity: 0.6
+    margin: auto auto 4em auto
+  .body
