@@ -10,7 +10,7 @@ To make your live easier, a gazilion of ARM chips and ARM development boards are
 
 Regarding programming languages, compilers and debugging solutions a lot of options are available. For instance, for an average US$29 120MHz ARM Cortex M4 development board, smartly marketed [Freedom Development Board](http://cache.freescale.com/files/soft_dev_tools/doc/user_guide/FRDM-K22F-QSG.pdf), Freescale offers classic USB-based debugging and programming, mass-storage-device flash programming via open tools like [mbed.org](http://www.mbed.org), the great open-source tool gcc, the more esoteric Jlink OpenSDA method for programming and debugging via non open-source software dev. tools like KEIL MDK, Atollic TrueSTUDIO, Rowley CrossWorks and what not.
 
-### WHERE TO BEGIN
+## WHERE TO BEGIN
 If you are a cheapskate you might want to begin with the most popular and cheapest HW+SW solution or if you like certainty and believe big money make good stuff you might want to begin with what appears to be the industry-standard solution. If you sit in between these two extremes you might have just being left wondering.
 
 Embedded programming happens in C/C++, any tool will actually do. Since it is 2015, and we happen to love open-source stuff, we all know that gcc is what should be used.
@@ -19,11 +19,19 @@ The hardware is a more complicated choice. At chip level, there are lots of manu
 
 Naturally the choice of the development board will bind you into using a certain SDK or a certain debugging tool. A classic example is the Arduino where the often-criticized Arduino IDE was/is always presented as the tool of choice for any development. If you are like me, you might like not to close yourself into a corner by choosing a specific board or development tool. 
 
-In the following sections I will present to you two very popular ways to succeed in the development of an ARM Embedded Development using the free vendor's software as well as a very professional open-source tool gcc.
+In the following sections I will present to you three very popular ways to succeed in the development of an ARM Embedded Development using the free vendor's software IDE, the very popular on-line compile mbed.org and the professional open-source tool gcc.
 
-### SETTING UP THE HARDWARE AND THE SOFTWARE
+## SETTING UP THE HARDWARE AND THE SOFTWARE
 
-For the 
+Out of the many ARM boards out there we have chosen a Freescale Freedom Development Board, specifically the one with a 120MHz Cortex M4 ARM processor (ref. FRDM-K22F). The reasons why we love this board are the following:
+* ARM Cortex M4, 120MHz with 500MB of flash and 128KB of RAM.
+* Price tag of US$29 and Worldwide availability.
+* Open-source OpenSDA debug interface with mass storage device (MSD) flash programming.
+* tons of peripherals, ADC  with [great documentation](http://cache.freescale.com/files/microcontrollers/doc/user_guide/FRDMK22FUG.pdf).
+* Programmable with mbed.org as well as with the free Freescale Kinetis Design Studio IDE (Windows, Mac and Linux).
+
+Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a good look FRDM-K22F documentation.
+
 
 
  
