@@ -30,7 +30,7 @@ Out of the many ARM boards out there we have chosen a Freescale Freedom Developm
 * tons of peripherals, ADC  with [great documentation](http://cache.freescale.com/files/microcontrollers/doc/user_guide/FRDMK22FUG.pdf).
 * Programmable with mbed.org as well as with the free Freescale Kinetis Design Studio IDE (Windows, Mac and Linux).
 
-Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a good look [FRDM-K22F documentation](pdf/K20P64M50SF0RM.pdf).
+Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a good look [FRDM-K22F documentation](/pdf/K20P64M50SF0RM.pdf).
 
 
 
