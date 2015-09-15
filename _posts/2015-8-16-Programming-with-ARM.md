@@ -9,7 +9,7 @@ To make your live easier, a gazilion of ARM chips and ARM development boards are
 
 Regarding programming languages, compilers and debugging solutions a lot of options are available. For instance, for an average US$29 120MHz ARM Cortex M4 development board, smartly marketed [Freedom Development Board](http://cache.freescale.com/files/soft_dev_tools/doc/user_guide/FRDM-K22F-QSG.pdf), Freescale offers classic USB-based debugging and programming, mass-storage-device flash programming via open tools like [mbed.org](http://www.mbed.org), the great open-source tool gcc, the more esoteric Jlink OpenSDA method for programming and debugging via non open-source software dev. tools like KEIL MDK, Atollic TrueSTUDIO, Rowley CrossWorks and what not.
 
-## WHERE TO BEGIN
+### WHERE TO BEGIN
 If you are a cheapskate you might want to begin with the most popular free of charge HW+SW solution or if you like certainty and believe big money make good stuff you might want to begin with what appears to be the industry-standard solution. If you sit in between these two extremes you might have just being left wondering.
 
 Hardware-wise you can't really buy anything.  
