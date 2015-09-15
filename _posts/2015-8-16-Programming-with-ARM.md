@@ -36,7 +36,7 @@ Before anything else you will need to buy the **FRDM-K22F board**, download the 
 
 This is the simplest and free way to get started with Freescale ARM programming. You need to head to the Freescale website, registed, download and install the tool **Kinetis Design Studio Integrated Development Environment (IDE)**. This software toos is based on Eclipse and GCC and it is available for Windows, Mac and Linux.
 
-Please note that the Kinetis Design Studio does not include the Freescale Software Development Kit (SDK). See next section.
+Note that the [Kinetis Design Studio](http://cache.freescale.com/files/microcontrollers/doc/user_guide/KDSUG.pdf?fsrch=1) does not include the Freescale Software Development Kit (SDK). See next section.
 
 ### KINETIS SDK
 
