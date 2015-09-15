@@ -40,13 +40,15 @@ Note that the [Kinetis Design Studio](http://cache.freescale.com/files/microcont
 
 ### KINETIS SDK
 
-To write and compile meaningful code for the Freescale FRDM-K22F is a good idea to use download and install the Kinetis Software Development Kit (KSDK) that Freescale has made for you. All necessary files are available from the Freescale website.
+To write and compile meaningful code for the Freescale FRDM-K22F is a very good idea to download, install and use the Kinetis Software Development Kit (KSDK) that Freescale has made for all of us. All necessary files are available from the Freescale website.
 
-Like a gigantic C/C++ library, Kinetis SDK, available for Windows Mac and Linux, will allow you to use all the feature of the ARM Cortex M4 processor in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tool.
+The Kinetis SDK includes a hardware abstraction layer (HAL) and drivers for each MCU peripheral, USB and connectivity stacks, middleware, real-time operating systems and example applications designed to simplify and accelerate application development on Kinetis MCUs. The Kinetis SDK includes full source code under a permissive open-source license for all hardware abstraction and peripheral driver software. The Kinetis SDK is offered for free.
+
+Like a gigantic C/C++ library, the Kinetis SDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
 
 ### GCC AND GDB
 
-Once you are familiar with ARM programming, you might want to drop out the use of these not so good Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
+Once you are familiar with ARM programming, you might want to abandon the use of these Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
 
 Under nearly and Debian-like Linux distribution you can install gcc and GDB with the following commands.
 
