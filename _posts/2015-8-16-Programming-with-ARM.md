@@ -47,6 +47,8 @@ The Kinetis SDK includes a hardware abstraction layer (HAL) and drivers for each
 
 Like a gigantic C/C++ library, the Kinetis SDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
 
+Once you are done with the Kinetis SDK do not forget to update the Kinetis Design Studio IDE via the link in Help - Install New Software. Refer to Kinetis SDK documentation for additioal help.
+
 ## BASIC HELLO WORLD
 
 
