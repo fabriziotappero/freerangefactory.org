@@ -32,8 +32,21 @@ Out of the many ARM boards out there we have chosen a Freescale Freedom Developm
 
 Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a good look [FRDM-K22F documentation](/pdf/K20P64M50SF0RM.pdf).
 
+### Install Freescale Kinetis Design Studio IDE
 
-### Install Gcc and GDB
+This is the simplest and free way to get started with Freescale ARM programming. You need to head to the Freescale website, registed, download and install the tool **Kinetis Design Studio Integrated Development Environment (IDE)**. This software toos is based on Eclipse and GCC and it is available for Windows, Mac and Linux.
+
+Please note that the Kinetis Design Studio does not include the Freescale Software Development Kit (SDK). See next section.
+
+### Istall Kinetis SDK
+
+To write and compile meaningful code for the Freescale FRDM-K22F is a good idea to use download and install the Kinetis Software Development Kit (KSDK) that Freescale has made for you. All necessary files are available from the Freescale website.
+
+Like a gigantic C/C++ library, Kinetis SDK, available for Windows Mac and Linux, will allow you to use all the feature of the ARM Cortex M4 processor in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tool.
+
+### Install GCC and GDB
+
+Once you are familiar with ARM programming, you might want to drop out the use of these not so good Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
 
 Under nearly and Debian-like Linux distribution you can install gcc and GDB with the following commands.
 
@@ -42,6 +55,8 @@ sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
 sudo apt-get update
 sudo apt-get install gcc-arm-none-eabi
 {% endhighlight %}
+
+
 
 
 
