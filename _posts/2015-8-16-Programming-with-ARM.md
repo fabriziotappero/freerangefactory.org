@@ -47,10 +47,13 @@ The Kinetis SDK includes a hardware abstraction layer (HAL) and drivers for each
 
 Like a gigantic C/C++ library, the Kinetis SDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
 
+## BASIC HELLO WORLD
+
+
+## ONE MORE THING
+Now you should be familiar with ARM programming and now you might be interested in abandoning these Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
+
 ### GCC AND GDB
-
-Once you are familiar with ARM programming, you might want to abandon the use of these Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
-
 Under nearly and Debian-like Linux distribution you can install gcc and GDB with the following commands.
 
 {% highlight bash %}
@@ -58,8 +61,6 @@ sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
 sudo apt-get update
 sudo apt-get install gcc-arm-none-eabi
 {% endhighlight %}
-
-## BASIC HELLO WORLD
 
 
 
