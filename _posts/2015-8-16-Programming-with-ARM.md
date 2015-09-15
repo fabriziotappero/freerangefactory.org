@@ -24,6 +24,7 @@ In the following sections I will present to you three very popular ways to succe
 ## SETTING UP THE HARDWARE AND THE SOFTWARE
 
 Out of the many ARM boards out there we have chosen a Freescale Freedom Development Board, specifically the one with a 120MHz Cortex M4 ARM processor (ref. FRDM-K22F). The reasons why we love this board are the following:
+
 * ARM Cortex M4, 120MHz with 500MB of flash and 128KB of RAM.
 * Price tag of $29 and Worldwide availability.
 * Open-source OpenSDA debug interface with mass storage device (MSD) flash programming.
