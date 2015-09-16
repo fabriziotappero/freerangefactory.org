@@ -47,9 +47,11 @@ KSDK includes a hardware abstraction layer (HAL) and drivers for each MCU periph
 
 Like a gigantic C/C++ library, KSDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
 
-Once you are done with the KSDK installation do not forget to update the Kinetis Design Studio IDE via the link in Help - Install New Software. Refer to KSDK documentation for additional help available from 
+Once you are done with the KSDK installation do not forget to update the Kinetis Design Studio IDE via the link in Help - Install New Software. Refer to KSDK documentation for additional help available from:
 
+{% highlight bash %}
 C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
+{% endhighlight %}
 
 ## BASIC HELLO WORLD
 
