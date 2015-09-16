@@ -35,19 +35,21 @@ Before anything else you will need to buy the **FRDM-K22F board**, download the 
 
 ### KINETIS DESIGN STUDIO IDE
 
-This is the simplest and free way to get started with Freescale ARM programming. You need to head to the Freescale website, registed, download and install the tool **Kinetis Design Studio Integrated Development Environment (IDE)**. This software toos is based on Eclipse and GCC and it is available for Windows, Mac and Linux.
+This is the simplest and free way to get started with Freescale ARM programming. You need to head to the Freescale website [www.freescale.com/kds](www.freescale.com/kds), registed, download and install the tool **Kinetis Design Studio Integrated Development Environment (IDE)**. This software toos is based on Eclipse and GCC and it is available for Windows, Mac and Linux.
 
-Note that the [Kinetis Design Studio](http://cache.freescale.com/files/microcontrollers/doc/user_guide/KDSUG.pdf?fsrch=1) does not include the Freescale Software Development Kit (SDK). See next section.
+Note that the [Kinetis Design Studio](www.freescale.com/kds) does not include the Freescale Software Development Kit (SDK). See next section.
 
 ### KINETIS SDK
 
-To write and compile meaningful code for the Freescale FRDM-K22F is a very good idea to download, install and use the Kinetis Software Development Kit (KSDK) that Freescale has made for all of us. All necessary files are available from the Freescale website.
+To write and compile meaningful code for any Freescale MCU is a very good idea to download, install and use the Kinetis Software Development Kit (KSDK) that Freescale has made for all of us. All necessary files are available from the Freescale website [ www.freescale.com/ksdk]( www.freescale.com/ksdk).
 
-The Kinetis SDK includes a hardware abstraction layer (HAL) and drivers for each MCU peripheral, USB and connectivity stacks, middleware, real-time operating systems and example applications designed to simplify and accelerate application development on Kinetis MCUs. The Kinetis SDK includes full source code under a permissive open-source license for all hardware abstraction and peripheral driver software. The Kinetis SDK is offered for free.
+KSDK includes a hardware abstraction layer (HAL) and drivers for each MCU peripheral, USB and connectivity stacks, middleware, real-time operating systems and example applications designed to simplify and accelerate application development on Kinetis MCUs. KSDK includes full source code under a permissive open-source license for all hardware abstraction and peripheral driver software. The Kinetis SDK is offered for free.
 
-Like a gigantic C/C++ library, the Kinetis SDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
+Like a gigantic C/C++ library, KSDK allows you to use all features of Freescale MCUs in a relative easy way. The good think about an SDK is that, if you like, you can drop the Freescale Kinetis Design Studio IDE and keep use the same SDK with any other GCC (or not GCC) tools.
 
-Once you are done with the Kinetis SDK do not forget to update the Kinetis Design Studio IDE via the link in Help - Install New Software. Refer to Kinetis SDK documentation for additioal help.
+Once you are done with the KSDK installation do not forget to update the Kinetis Design Studio IDE via the link in Help - Install New Software. Refer to KSDK documentation for additional help available from 
+
+C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
 
 ## BASIC HELLO WORLD
 
