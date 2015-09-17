@@ -22,13 +22,19 @@ Naturally the choice of the development board will bind you into using a certain
 In the following sections I will present to you three very popular ways to succeed in the development of an ARM Embedded Development using the free vendor's software IDE, the very popular on-line compile mbed.org and the professional open-source tool gcc.
 
 ## SETTING UP THE HARDWARE AND THE SOFTWARE
-Out of the many ARM boards out there we have chosen a Freescale Freedom Development Board, specifically the one with a 120MHz Cortex M4 ARM processor (ref. FRDM-K22F). The reasons why we love this board are the following:
+Out of the many ARM boards out there we like and we have chosen a Freescale Freedom Development Board, specifically the one with a 120MHz Cortex M4 ARM processor (ref. FRDM-K22F). The reasons why we love this board are the following:
 
 * ARM Cortex M4, 120MHz with 500MB of flash and 128KB of RAM.
 * Price tag of $29 and Worldwide availability.
 * Open-source OpenSDA debug interface with mass storage device (MSD) flash programming.
 * tons of peripherals, ADC  with [great documentation](http://cache.freescale.com/files/microcontrollers/doc/user_guide/FRDMK22FUG.pdf).
 * Programmable with mbed.org as well as with the free Freescale Kinetis Design Studio IDE (Windows, Mac and Linux).
+
+Another great aspect of the FRDM-K22F board is that it actually hosts two ARMs. Next to the main Freescal K22 ARM MCU there is a second smalled K20 ARM MCU that can be easily programmed too and act as **OpenSDA** debugger allowing the user to easily and openly debug the main K22 MCU or any external Freescale MCU via the SWD connector.
+
+$29 for a Worldwide-available 120MHz ARM board equipped with tons of peripherals, an open-source 
+debugger, a super easy drag and drop programming method and accompanied by 300MB of open-source 
+SDK is really something hard to beat.
 
 Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a good look [FRDM-K22F documentation](/pdf/K20P64M50SF0RM.pdf).
 
