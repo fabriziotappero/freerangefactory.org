@@ -13,7 +13,7 @@ Regarding programming languages, compilers and debugging solutions a lot of opti
 ## WHERE TO BEGIN
 If you are a cheapskate you might want to begin with the most popular and cheapest HW+SW solution or if you like certainty and believe big money make good stuff you might want to begin with what appears to be the industry-standard solution. If you sit in between these two extremes you might have just being left wondering.
 
-Embedded programming happens in C/C++, any tool will actually do. Since it is 2015, and we happen to love open-source stuff, we all know that gcc is what should be used.
+Embedded programming happens in C/C++, any tool will actually do. Since it is 2015, and we happen to love open-source stuff, we all know that the GNU C Compile (GCC) is really the way to go.
 
 The hardware is a more complicated choice. At chip level, there are lots of manufacturers and different ARM chips. A set of SDK or libraries are normally available for each given ARM architecture. Developing the ability to read and understand libraries docs is a must. Most of the time however you will not really need to begin from the chip and develop your PCB but instead you will just grab an already made ARM board that has all you might want.
 
