@@ -60,7 +60,7 @@ C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
 
 This is the basic code to blink a LED.
 
-```c
+```cpp
 #include "fsl_device_registers.h"
 #include "board.h"
  
