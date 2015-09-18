@@ -60,16 +60,7 @@ C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
 
 This is the basic code to blink a LED.
 
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
-```
-
-and this
-
-
-```c
+{% highlight cpp %}
 #include "fsl_device_registers.h"
 #include "board.h"
  
@@ -89,8 +80,7 @@ int main(void){
     }
      return 0;
 }
-```
-
+{% endhighlight %}
 
 ## DEBUGGING WITH OPENSDA
 
