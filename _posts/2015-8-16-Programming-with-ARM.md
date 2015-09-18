@@ -58,6 +58,7 @@ C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
 
 ## BASIC HELLO WORLD
 
+## DEBUGGING WITH OPENSDA
 
 ## ONE MORE THING
 Now you should be familiar with ARM programming and now you might be interested in abandoning these Eclipse tools and use the Freescale SDK from a bare metal development environment only made of the Freescale SDK, the open-source compiler GCC and your favorite editor.
