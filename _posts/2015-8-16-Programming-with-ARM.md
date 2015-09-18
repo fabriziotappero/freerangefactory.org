@@ -58,6 +58,31 @@ C:\Freescale\KSDK_1.2.0\doc\Getting Started with Kinetis SDK (KSDK).pdf
 
 ## BASIC HELLO WORLD
 
+This is the basic code to blink a LED.
+
+{% highlight c %}
+#include "fsl_device_registers.h"
+#include "board.h"
+ 
+static int i = 0;
+ 
+int main(void){
+  short OFF = 1;
+  short ON = 0;
+  hardware_init();
+  GPIO_DRV_SetPinDir(kGpioLED1,kGpioDigitalOutput); //Green LED
+  
+  while (1){
+    for (i = 0; i<0xFFFFFF; i++){}
+    GPIO_DRV_WritePinOutput(kGpioLED1, ON); //Green LED on
+    for (i = 0; i<0xFFFFFF; i++){}
+    GPIO_DRV_WritePinOutput(kGpioLED1, OFF); //Green LED off
+    }
+     return 0;
+}
+{% endhighlight %}
+
+
 ## DEBUGGING WITH OPENSDA
 
 ## ONE MORE THING
