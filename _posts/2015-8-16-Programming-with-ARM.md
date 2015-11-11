@@ -43,7 +43,7 @@ If you want to get up and running right away it is a good idea to go for a web-b
 
 Just head to the [developer mbed.org ](https://developer.mbed.org/accounts/login/) create a free account, log in and hit the [compiler button](https://developer.mbed.org/compiler/). You should be presented with the following simple but really powerful programming environment.
 
-![Image alt]({{site.baseurl}}/img/dcdc_converter.png "image title")
+![Image alt]({{site.url}}/img/dcdc_converter.png "image title")
 
 ## PROGRAMMING WITH GCC
 
