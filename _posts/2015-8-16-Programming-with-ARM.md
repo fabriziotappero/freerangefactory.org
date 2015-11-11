@@ -43,7 +43,18 @@ If you want to get up and running right away it is a good idea to go for a web-b
 
 Just head to the [developer mbed.org ](https://developer.mbed.org/accounts/login/) create a free account, log in and hit the [compiler button](https://developer.mbed.org/compiler/). You should be presented with the following simple but really powerful programming environment.
 
-![Image alt]({{site.url}}/img/dcdc_converter.png "image title")
+![Image alt]({{site.url}}/img/code-mbed-env.png "mbed development environment")
+
+You are now ready to program your board. With the right clink button, create a new project, select your hardware platform, the Freescale FRDM-K22F and choose "Hello world example program". hit compile and you will get a .bin file.
+
+This is a screeshot of what it should look like your mbed development environment.
+
+![Image alt]({{site.url}}/img/code-mbed-env.png "mbed development environment")
+
+Congratulations, you have successfully made, compiled and downloaded your first ARM program. What you are left with is the task of programming your Freescale board. Likely mbed has made it very very simple, as simple as drag the freshly downloaded file into a virtual disk.
+
+You should now plug your PC to the FRDM-K22F board USB. You will notice how a virtual disk drive named MBED will get mounted. Simply drag the just downloaded .bin file inside the MBED virtual disk. The board will automatically reboot and load your freshly made firmware. You can see red LED blink as sign of a successful programming experience.
+
 
 ## PROGRAMMING WITH GCC
 
