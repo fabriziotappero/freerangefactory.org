@@ -39,7 +39,11 @@ Before anything else you will need to buy the **FRDM-K22F board**, download the 
 
 
 ### ARM PROGRAMMING SOFTWARE
-We really want to get up and running right away so we will go for a web-based tool. Just head to the [developer mbed.org ](https://developer.mbed.org/accounts/login/) create a free account, log in and head to the [mbed.org compiler ](https://developer.mbed.org/compiler/).
+If you want to get up and running right away it is a good idea to go for a web-based ARM development environment. Even better to go for a free one.
+
+Just head to the [developer mbed.org ](https://developer.mbed.org/accounts/login/) create a free account, log in and hit the [compiler button](https://developer.mbed.org/compiler/). You should be presented with the following simple but really powerful programming environment.
+
+![Image alt]({{site.baseurl}}/img/dcdc_converter.png "image title")
 
 ## PROGRAMMING WITH GCC
 
