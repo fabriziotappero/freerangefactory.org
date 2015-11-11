@@ -19,9 +19,11 @@ The hardware is a more complicated choice. At chip level, there are lots of manu
 
 Naturally the choice of the development board will bind you into using a certain SDK or a certain debugging tool. A classic example is the Arduino where the often-criticized Arduino IDE was/is always presented as the tool of choice for any development. If you are like me, you might like not to close yourself into a corner by choosing a specific software tool or a specific dev. board. 
 
-In the following sections I will present to you three very popular ways to succeed in the development of an ARM Embedded Development using the free web-based compile at mbed.org and a great Freescale ARM board.
+In the following sections I will present to you two very popular ways to succeed in the development of an ARM embedded development system using the free web-based compile at mbed.org and a great Freescale ARM board.
 
 ## SETTING UP THE HARDWARE AND THE SOFTWARE
+
+### ARM DEVELOPMENT BOARD
 Out of the many ARM boards out there we like and we have chosen a Freescale Freedom Development Board, specifically the one with a 120MHz Cortex M4 ARM processor (ref. FRDM-K22F). The reasons why we love this board are the following:
 
 * ARM Cortex M4, 120MHz with 500kB of flash and 128KB of RAM and tons of periperals.
@@ -37,6 +39,15 @@ debugger, a super easy drag and drop programming method and 300MB of open-source
 
 Before anything else you will need to buy the **FRDM-K22F board**, download the **Freescale Kinetis Design Studio IDE** for your favorite operating system as well as the Freescale SDK and have a quick look at the [FRDM-K22F documentation](/pdf/K20P64M50SF0RM.pdf).
 
+Here you have a quick outline of what the Freescale FRDM-K22F board looks like.
+
+![Image alt]({{site.url}}/img/FRDM-K22F.jpg "mbed development environment")
+
+Where can you buy this board? 
+[Digikey](http://www.digikey.es/product-detail/en/FRDM-K22F/FRDM-K22F-ND/4915410), 
+[Mouser](http://www.mouser.com/Search/Refine.aspx?Keyword=FRDM-K22F),
+[Farnell UK](http://uk.farnell.com/freedom-frdm-k22f),
+[Element 14](http://www.newark.com/freescale-semiconductor/frdm-k22f/dev-board-cortex-m4-mk22fn512vlh12/dp/62X3919).
 
 ### ARM PROGRAMMING SOFTWARE
 If you want to get up and running right away it is a good idea to go for a web-based ARM development environment. Even better to go for a free one.
