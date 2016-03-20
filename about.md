@@ -6,7 +6,7 @@ layout: default
 I love engineering, programming things and make they fly.
 
 
-![about-pic]({{ site.url }}/img/fabrizio-tappero.jpg= "Fabrizio")
+![about-pic]({{ site.url }}/img/fabrizio-tappero.jpg "Fabrizio")
 
 
 
