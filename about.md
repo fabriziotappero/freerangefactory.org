@@ -5,7 +5,10 @@ layout: default
 
 I love engineering, programming things and make they fly.
 
-({{ site.url }}/img/fabrizio-tappero.jpg)
+
+![alt text]({{ site.url }}/img/fabrizio-tappero.jpg "Fabrizio")
+
+
 
 
 
