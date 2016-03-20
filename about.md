@@ -5,7 +5,9 @@ layout: default
 
 I love engineering, programming things and make they fly.
 
-![about-pic]({{ site.url }}/img/fabrizio-tappero.jpg "Fabrizio")
+
+![about_pic]({{ site.url }}/img/fabrizio-tappero.jpg "Fabrizio")
+
 
 some more text here too.
 
