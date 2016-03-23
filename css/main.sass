@@ -23,6 +23,7 @@ $desktop: new-breakpoint(min-width 681px)
 
 @import "modal"
 
+
 body
   margin: 0
   min-width: 320px
@@ -93,7 +94,6 @@ body
 
 
 .global_page_wrap
-
   button
     font-weight: normal
 
@@ -215,6 +215,7 @@ body
   height: 130px
   color: white
   z-index: 50
+
   p
     margin: 1em 0 0 1em
   .footer_links
@@ -438,14 +439,14 @@ hr
     font-style: italic
     opacity: 0.6
     margin: -2em auto 4em auto
-  .body
 
 
+// about page
+.AboutPage
+  @include outer-container
 
-img[alt="about_pic"]
-  max-width: 200px
-  margin-top: 8.5px
-  margin-left: 5px
-  display: inline
-  
- 
+.AboutPageImage
+  @include span-columns(3)
+
+.AboutPage-txt
+  @include span-columns(8)
