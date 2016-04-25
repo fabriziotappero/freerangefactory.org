@@ -1,79 +1,96 @@
 ---
 layout: default
 ---
-
-  <section class="landingPage">
-    <div class="landingPageImage"></div>
-    <div class="landingPage-inner">
-
-      <h2 id="fittext2">MAKE YOUR OPEN EMBEDDED ELECTRONICS</h2>
-      <p id="fittext1">We believe in openness for the better.
-        We are a tiny group of people working on building open-source electronics.</p>
-        <a href="#activities"><button>LOOK AROUND</button></a>
-    </div>
-  </section>
-
-  <h3 id="activities">WHERE TO START</h3>
-
-
-    <section class="cards">
-      <div class="card">
-        <a href="books_tuts.html">
-          <div class="card-inner">
-            <div class="card-image green">{% include icons/icon-book.html %}</div>
-            <div class="card-header">Books and Tutorials</div>
-            <div class="card-copy">
-              <p>A collection of books to learn C++ and VHDL and get started
-                 developing the code for your embedded system. We have spent countless
-                 hours preparing this material.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="dev_boards.html">
-          <div class="card-inner">
-            <div class="card-image red">{% include icons/icon-elec.html %}</div>
-            <div class="card-header">Development Boards</div>
-              <div class="card-copy">
-                <p>Buy some of the most powerfull and versatile ARM and FPGA boards.
-                  All development boards from Free Range Factory are
-                  open source with schematics available for download.</p>
-              </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="cards">
-      <div class="card">
-        <a href="cores.html">
-          <div class="card-inner">
-            <div class="card-image blue">{% include icons/icon-code.html %}</div>
-            <div class="card-header">IP Cores</div>
-            <div class="card-copy">
-              <p>An easily searchable 4.5GB database of IP cores writtend in VHDL and
-                Verilog. All code is open source and downloadble free of charge
-                without any restriction.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="pcb.html">
-        <div class="card-inner">
-          <div class="card-image yellow">{% include icons/icon-pcb.html %}</div>
-        <div class="card-header">Printed Circuit Board</div>
-        <div class="card-copy">
-          <p>Everything you need to know about printed cuircuit board design.
-            You can learn how to design an electronic schematic and succesfully
-            layout the board.</p>
+<section class="landingPage">
+  <div class="innerLP">
+  <div class="title dark-bg">
+    <span>BUILD EMBEDDED ELECTRONICS</span>
+  </div>
+  <div class="blob dark-bg">
+    <p><i>"by 2025 intelligent machines will do 30% of our jobs"</i></p>
+    <p>the World demands for skillful and passionate developers, we want to help you to become one</p>
+  </div>
+    <a href="#activities"><button>TELL ME MORE</button></a>
         </div>
-      </div>
-    </a>
-    </div>
-    </section>
+</section>
 
-  {% include contact.html %}
+<section class="proposing-book">
+  <div class="inner">
+    <h3 id="activities">BECOME PART OF OUR COMMUNITY</h3>
+    <div class="book-list">
+      <ul>
+        <li class="smicon-li">
+          {% include icons/icon-books.html %}
+          <span>We spent 2,000h writing what we consider the
+            best VHDL programming book and we made it available
+            for free.
+          </span></li>
+        <li class="smicon-li">
+          {% include icons/icon-cloud-check.html %}
+          <span>We wanted out material to be up to date and error
+        free and we put all out source code on github.
+      </span></li>
+        <li class="smicon-li">
+          {% include icons/icon-search.html %}
+          <span>We created a free and browsable database of 850
+          IP cores of open-source VHDL and Verilog code.
+        </span></li>
+        <li class="smicon-li">
+          {% include icons/icon-youtube.html %}
+          <span>We made the most engaging video courses to help
+        your learn embedded programming.
+      </span></li>
+        <li class="smicon-li">
+          {% include icons/icon-heart.html %}
+          <span>Would you like to be part of of our lovely community? Please do so.
+          </span></li>
+      </ul>
+    </div>
+    <div class="book-pic">
+      <img src="img/free-range-vhdl-book.png" alt="" />
+    </div>
+    <div class="email-in">
+        <input type="text" name="e-mail" placeholder="your e-mail" value="" onfocus="value=''" onblur="value=''">
+      <a href="#get-free-pdf"><button>GET FREE PDF</button></a>
+    </div>
+  </div>
+</section>
+
+<section class="proposing-ipcores blue-bg">
+  <div class="inner">
+    <h3>OPEN-SOURCE DATABASE</h3>
+    <div class="float-banner">
+      <div class="inner dark-bg">
+        <h3>BROWSE 850 FREE OPEN-SOURCE CORES</h3>
+        <p>Download, study and use open-source IP cores
+          for your own FPGA embedded system
+        </p>
+        <a href="cores.html"><button>BROWSE CODE</button></a>
+      </div>
+    </div>
+    <img src="img/ipcores-pic.png" alt=""/>
+  </div>
+</section>
+
+<section class="proposing-vid">
+  <div class="inner white-bg">
+    <h3>ON-LINE VIDEO COURSES</h3>
+    <div class="float-banner">
+      <div class="inner dark-bg">
+        <h3>ELECTRONIC VIDEO COURSES</h3>
+        <p>Not the typical "how to use a serial port" kind of course but the "let's build a drone" kind of course</p>
+        <a href="drone-course.html"><button>WATCH VIDEOS</button></a>
+      </div>
+    </div>
+    <img src="img/video-drone-pic.png" alt=""/>
+  </div>
+</section>
+
+<section class="mission-statement blue-bg">
+  <div class="inner">
+    <h3>FREE RANGE FACTORY MISSION</h3>
+    <p>Develop modern and effective tools for the open-source
+    electronic embedded community.</p>
+  </div>
+</section>
+{% include contact.html %}
