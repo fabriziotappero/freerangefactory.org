@@ -139,7 +139,7 @@ body
 
 // become part of our community
 .proposing-book
-  margin-top: 70px
+  margin-top: 30px
   margin-bottom: 70px
   .inner
     @include outer-container
@@ -150,7 +150,8 @@ body
       text-align: left
       @include span-columns(7)
       @include omega()
-      padding-bottom: 30px
+      padding-top: 30px
+      padding-bottom: 0px
       padding-left: 50px
       @include media($mobile)
         @include span-columns(12)
@@ -162,12 +163,14 @@ body
           +size(28px 28px)
           margin-left: -40px
           margin-bottom: -8px
+          margin-right: 10px
           path
             fill: rgba(black, 0.7)
 
     .book-pic
       @include span-columns(5)
       max-width: 300px
+      padding-top: 40px
       @include media($mobile)
         @include span-columns(12)
 
@@ -628,3 +631,12 @@ hr
       svg
         path
           fill: white
+
+.small-communication-window
+  @include outer-container
+  text-align: center
+  .inner
+    max-width: 500px
+    background-color: rgba(black, 0.05)
+    margin: 5px auto
+    padding: 10px 20px
