@@ -40,10 +40,6 @@ body
   h1,h2,h3,h4,h5
     color: $base-color
     margin: 1.5em auto 1em auto
-    @include media(max-width 550px)
-      font-size: 1.1em
-      line-height: 1.1em * 1.4
-      margin: 2px
 
   button
     @include media($mobile)
@@ -175,18 +171,18 @@ body
         @include span-columns(12)
 
     .email-in
-      @include span-columns(12)
+      //@include span-columns(12)
       text-align: right
       padding-right: 10px
       input
-        width: 250px
-        margin: auto
+        width: 300px
+        margin: 5px auto
         display: inline-block
       a
         padding-left: 5px
       button
         //padding: 12px
-        margin: 10px 0
+        //margin: 10px 0
 
 // Open-source database
 .proposing-ipcores
@@ -198,24 +194,25 @@ body
     @include outer-container
     text-align: center
     margin: 0 auto
-    h3
+    h1,h2,h3,h4,h5
       color: white
 
     .float-banner
       position: absolute
       text-align: left
-      margin: 100px auto 0 0
+      margin: 80px auto 0 0
       .inner
         text-align: right
         max-width: 600px
         padding: 10px
         color: white
-        h1,h2,h3,h4
+        h1,h2,h3,h4,h5
+          margin-top: 0px
+          margin-bottom: 2px
           text-align: left
-
+          color: white
         p
           text-align: left
-
         a
           margin: 0 0 0 auto
 
@@ -242,9 +239,11 @@ body
         max-width: 600px
         padding: 10px
         color: white
-        h1,h2,h3,h4
+        h1,h2,h3,h4,h5
           text-align: left
           color: white
+          margin-top: 0px
+          margin-bottom: 2px
         p
           text-align: left
         a
@@ -258,7 +257,7 @@ body
     max-width: 650px
     margin: 0 auto 0 auto
     padding: 1px 20px 50px 20px
-    h3
+    h1,h2,h3,h4,h5
       color: white
     p
       color: white
@@ -515,9 +514,10 @@ hr
 
 // video courses page
 .CoursePage
-  //margin: 50px auto
+  h3
+    padding-top: 50px
+    margin-top: 0px
   .CourselandingPage
-
     background-image: url('../img/course-drone.jpg')
     background-size: cover
     margin: 20px 0 20px auto
@@ -564,9 +564,37 @@ hr
             fill: red
 
   .CoursePageTxt
-    padding: 20px
-    max-width: 660px
-    margin: auto
+    padding: 10px
+    @include outer-container
+    max-width: 690px
+
+    .spec-container
+      @include span-columns(12)
+      margin-top: 20px
+      margin-bottom: 30px
+
+      .course-spec
+        font-size: 2em
+        @include span-columns(4)
+        padding: 2px
+        color: $base-color
+        @include media($mobile)
+          font-size: 1.1em
+        @include media($tablet)
+          font-size: 1.3em
+
+        svg
+          margin-bottom: -20px
+          margin-right: 5px
+          @include media($mobile)
+            +size(22px 22px)
+            margin-bottom: -5px
+          @include media($tablet)
+            +size(35px 35px)
+            margin-bottom: -10px
+          path
+            fill: $base-color
+
 
   .courseDescription
     margin: 50px auto
@@ -596,7 +624,7 @@ hr
       @include outer-container
       max-width: 700px
       //margin: 50px auto
-      h3
+      h4
         margin-top: 0
         color: white
       img
@@ -619,6 +647,10 @@ hr
       input
         display: inline-block
         margin: 15px auto
+      .button
+        text-transform: uppercase
+      .button:hover
+        background-color: rgba(crimson, 1)
       svg
         +size(35px 35px)
         path
@@ -626,7 +658,7 @@ hr
 
   .blue-bg
     .inner
-      button
+      button, .button
         background-color: rgba( red, 0.7 )
       svg
         path
@@ -639,4 +671,11 @@ hr
     max-width: 500px
     background-color: rgba(black, 0.05)
     margin: 5px auto
-    padding: 10px 20px
+    padding: 10px 10px
+    h3
+      margin: 10px
+    p
+      text-align: left
+    img
+      max-width: 250px
+      text-align: center
