@@ -56,15 +56,21 @@ body
     margin: auto auto -6px auto
     path
       fill: $base-color
+    @include media($tablet)
+      +size(21px 21px)
+      margin: auto auto -5px auto
+    @include media($mobile)
+      +size(18px 18px)
+      margin: auto auto -4px auto
 
 .nav
   .logo-nav
     svg
-      margin: 0.8em 0 0 0.5em
+      margin: 0.1em 0 0 0.5em
       +size(200px 75px)
 
       @include media($tablet)
-        +size(150px 65px)
+        +size(100px 37px)
 
       @include media($mobile)
         display: none
@@ -74,7 +80,7 @@ body
     float: right
     display: inline
     text-transform: uppercase
-    margin: 0.4em 0.5em 0 0
+    margin: 0.1em 0.2em 0 0
     background: white
 
     a
@@ -83,6 +89,8 @@ body
       color: $base-color
       @include media($tablet)
         font-size: 0.8em
+      @include media($mobile)
+        font-size: 0.7em
 
       &:hover
         color: rgba( $base-color, .7 )
@@ -90,7 +98,6 @@ body
       svg:hover
         path
           fill: rgba( $base-color, .7 )
-
     a.red
       background-color: red
       color: white
@@ -106,7 +113,7 @@ body
   background-size: cover
   margin: 1em 0 auto auto
   color: white
-  height: 500px
+  height: 600px
   width: 100%
   text-align: center
   display: inline-block
@@ -118,11 +125,12 @@ body
 
   .title
     padding: 0 5px
-    margin: 60px 0 20px 0
+    margin: 40px 0 10px 0
     font-weight: bold
     font-size: 1.6em
     @include media($desktop)
       font-size: 2em
+      margin: 120px 0 30px 0
 
   .blob
     padding: 0 5px
@@ -225,6 +233,10 @@ body
     @include outer-container
     text-align: center
     margin: 0 auto
+    .intro
+      text-align: left
+      max-width: 700px
+      margin: auto
 
     img
       width: 100%
@@ -233,7 +245,6 @@ body
       position: absolute
       text-align: left
       margin: 50px auto 0 0
-
       .inner
         text-align: right
         max-width: 600px
