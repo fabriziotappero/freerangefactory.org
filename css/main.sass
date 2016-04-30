@@ -120,7 +120,8 @@ body
 
   .innerLP
     text-align: center
-    width: 85%
+    //width: 85%
+    max-width: 800px
     margin: 0 auto
 
   .title
@@ -135,6 +136,8 @@ body
   .blob
     padding: 0 5px
     font-size: 0.95em
+    //max-width: 700px
+    //margin: auto
     @include media($desktop)
       font-size: 1.2em
 
@@ -147,12 +150,11 @@ body
   margin-bottom: 70px
   .inner
     @include outer-container
-    @include omega()
-    padding: 40px 0 40px 0
+    padding: 30px 0 30px 0
     text-align: center
     .book-list
       text-align: left
-      @include span-columns(7)
+      @include span-columns(8)
       @include omega()
       padding-top: 30px
       padding-bottom: 0px
@@ -172,7 +174,7 @@ body
             fill: rgba(black, 0.7)
 
     .book-pic
-      @include span-columns(5)
+      @include span-columns(4)
       max-width: 300px
       padding-top: 40px
       @include media($mobile)
