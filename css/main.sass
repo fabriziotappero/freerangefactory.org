@@ -118,6 +118,18 @@ body
   text-align: center
   display: inline-block
 
+  .pcb-course-logo
+    position: absolute
+    height: 0
+    margin: 0
+    padding: 0
+    margin-top: 400px
+    margin-left: 30px
+    max-width: 150px
+    img:hover
+      opacity: 0.8
+      filter: alpha(opacity=80)
+
   .innerLP
     text-align: center
     //width: 85%
@@ -144,10 +156,12 @@ body
   button:hover
     background-color: rgba( red, .8 )
 
+
 // become part of our community
 .proposing-book
-  margin-top: 30px
+  margin: 0
   margin-bottom: 70px
+  //display: inline-block
   .inner
     @include outer-container
     padding: 30px 0 30px 0
@@ -190,9 +204,7 @@ body
         display: inline-block
       a
         padding-left: 5px
-      button
-        //padding: 12px
-        //margin: 10px 0
+
 
 // Open-source database
 .proposing-ipcores
@@ -463,6 +475,7 @@ body
 
 .blue-bg
   background-color: $base-color
+
 .white-bg
   background-color: white
 
@@ -472,17 +485,19 @@ hr
   width: 100%
   height: 2px
 
-.three-equal-dist
-  @include span-columns(4)
-  @include omega
-  padding: 1.5em 0
+
+
 
   img:focus, &:hover
-    background-color: lighten(gainsboro, 5%)
+    //background-color: lighten(gainsboro, 5%)
 
 .full-page
   @include span-columns(12)
-  @include omega
+  //@include omega
+  //margin: 5px
+
+
+
 
 #PayPalMiniCart
   form
@@ -692,3 +707,13 @@ hr
     img
       max-width: 250px
       text-align: center
+
+// PCB Video CoursePage
+.pcb-course
+  .txt
+    padding: 20px
+  .videos
+    margin: 30px auto
+    @include outer-container
+    .video
+      @include span-columns(4)
