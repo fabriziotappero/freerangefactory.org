@@ -547,15 +547,18 @@ hr
 // video courses page
 .CoursePage
   h3
-    padding-top: 50px
-    margin-top: 0px
+    padding-top: 40px
+    padding-bottom: 10px
+    margin: 0
   .CourselandingPage
     background-image: url('../img/course-drone.jpg')
     background-size: cover
     margin: 20px 0 20px auto
-    min-height: 400px
+    min-height: 600px
     @include media($mobile)
       min-height: 250px
+    @include media($tablet)
+      min-height: 350px
     width: 100%
     text-align: center
     display: inline-block
@@ -565,7 +568,7 @@ hr
       text-align: left
       margin: 30px auto 0px 0
       .inner
-        max-width: 600px
+        max-width: 500px
         padding: 10px
         color: white
         .title
@@ -629,23 +632,26 @@ hr
 
 
   .courseDescription
-    margin: 50px auto
-    //text-align: center
+    max-width: 690px
+    margin: auto
+    .inner
+      margin: 50px auto
+      //text-align: center
 
-    text-align: left
-    padding-bottom: 30px
-    padding-left: 50px
+      text-align: left
+      padding-bottom: 30px
+      padding-left: 50px
 
-    ul li
-      padding-bottom: 20px
+      ul li
+        padding-bottom: 20px
 
-      svg
-        +size(28px 28px)
-        margin-left: -40px
-        margin-bottom: -8px
-        margin-right: 10px
-        path
-          fill: rgba(black, 0.7)
+        svg
+          +size(28px 28px)
+          margin-left: -40px
+          margin-bottom: -8px
+          margin-right: 10px
+          path
+            fill: rgba(black, 0.7)
 
   .courseAuthor
     //@include outer-container
