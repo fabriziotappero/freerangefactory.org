@@ -635,23 +635,29 @@ hr
     max-width: 690px
     margin: auto
     .inner
-      margin: 50px auto
-      //text-align: center
-
+      margin: 20px auto
       text-align: left
-      padding-bottom: 30px
-      padding-left: 50px
+      //padding-bottom: 30px
+      //padding-left: 50px
+      //background-color: rgba(lightgrey, 0.3)
+      border: 2px solid rgba($base-color, 0.4)
 
       ul li
-        padding-bottom: 20px
+        //padding-bottom: 20px
+        margin: 0
+        padding: 0 10px
 
-        svg
-          +size(28px 28px)
-          margin-left: -40px
-          margin-bottom: -8px
-          margin-right: 10px
-          path
-            fill: rgba(black, 0.7)
+        background-color: rgba($base-color, 0.1)
+
+      li:nth-child(odd)
+        background-color: rgba($base-color, 0.4)
+        // svg
+        //   +size(28px 28px)
+        //   margin-left: -40px
+        //   margin-bottom: -8px
+        //   margin-right: 10px
+        //   path
+        //     fill: rgba(black, 0.7)
 
   .courseAuthor
     //@include outer-container

@@ -1,19 +1,10 @@
 $(document).ready(function() {
 
-//   /* resize fonts for small/mobile screen */
-//   $('body').flowtype({
-//    minimum   : 500,
-//    maximum   : 600,
-//    minFont   : 12,
-//    maxFont   : 30,
-//    fontRatio : 30
-//   });
-//
-
 $("#fittext0").fitText();
 $("#fittext1").fitText(1.7,{ minFontSize: '22px', maxFontSize: '28px' });
 $("#fittext2").fitText(1.7, { minFontSize: '31px', maxFontSize: '42px' });
  });
+
 
 // every time you resize the window set equale height for all cards in homepage
 $(window).resize(function() {
