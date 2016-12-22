@@ -15,7 +15,7 @@ description: |
   system based on a 32bit 70MHz ARM ([K20P64M72SF1](pdf/K20P64M72SF1.pdf))
   that measure only 30mmX18mm.
 
-  The Teensy comes pre-flashed with a curtom bootloader that allows you to
+  The Teensy comes pre-flashed with a custom bootloader that allows you to
   program it using the on-board USB connector. No external programmer
   needed. You can develop code for the Teensy in your favourite program editor using
   C/C++ or you can use the Teensyduino, the Arduino IDE.
